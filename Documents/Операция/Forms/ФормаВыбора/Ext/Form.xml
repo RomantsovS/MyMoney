@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Операции</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandSet>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Post</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>UndoPosting</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаУдалитьОперацию" id="63">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УдалитьОперацию</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.DeleteDirectly</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаУдалитьОперациюРасширеннаяПодсказка" id="64"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<ChoiceMode>true</ChoiceMode>
+			<Header>false</Header>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>ListSettings</ExcludedCommand>
+				<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>Post</ExcludedCommand>
+				<ExcludedCommand>Refresh</ExcludedCommand>
+				<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>UndoPosting</ExcludedCommand>
+			</CommandSet>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="Группа3" id="37">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<LabelField name="Дата1" id="39">
+							<DataPath>Список.Date</DataPath>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+							<Width>5</Width>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='MMM yyyy'</v8:content>
+								</v8:item>
+							</Format>
+							<Font ref="sys:DefaultGUIFont" kind="WindowsFont" scale="70"/>
+							<ContextMenu name="Дата1КонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="Дата1РасширеннаяПодсказка" id="41"/>
+						</LabelField>
+						<LabelField name="Дата" id="27">
+							<DataPath>Список.Date</DataPath>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+							<Width>5</Width>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=dd</v8:content>
+								</v8:item>
+							</Format>
+							<Font ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont" scale="100"/>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="29"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="Группа2" id="30">
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<LabelField name="Кошелек" id="19">
+							<DataPath>Список.Кошелек</DataPath>
+							<Width>10</Width>
+							<Font ref="sys:DefaultGUIFont" kind="WindowsFont" scale="80"/>
+							<ContextMenu name="КошелекКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="КошелекРасширеннаяПодсказка" id="21"/>
+						</LabelField>
+						<LabelField name="Статья" id="32">
+							<DataPath>Список.Статья</DataPath>
+							<Width>10</Width>
+							<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont" scale="80"/>
+							<ContextMenu name="СтатьяКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="СтатьяРасширеннаяПодсказка" id="34"/>
+						</LabelField>
+						<LabelField name="Комментарий" id="42">
+							<DataPath>Список.Комментарий</DataPath>
+							<Width>10</Width>
+							<Font ref="sys:DefaultGUIFont" kind="WindowsFont" scale="50"/>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="44"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="Группа4" id="65">
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<ColumnGroup name="Группа1" id="58">
+							<Group>InCell</Group>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="59"/>
+							<ChildItems>
+								<LabelField name="Сумма" id="55">
+									<DataPath>Список.Сумма</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>3</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont" scale="80"/>
+									<ContextMenu name="СуммаКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="57"/>
+								</LabelField>
+								<LabelField name="КошелекВалютаКраткоеНаименование" id="60">
+									<DataPath>Список.Кошелек.Валюта.КраткоеНаименование</DataPath>
+									<Width>1</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="КошелекВалютаКраткоеНаименованиеКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="КошелекВалютаКраткоеНаименованиеРасширеннаяПодсказка" id="62"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="Метка" id="67">
+							<DataPath>Список.Метка</DataPath>
+							<Width>3</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>3</MaxWidth>
+							<Font ref="sys:DefaultGUIFont" kind="WindowsFont" scale="50"/>
+							<ContextMenu name="МеткаКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="МеткаРасширеннаяПодсказка" id="69"/>
+						</LabelField>
+						<LabelField name="СуммаОбщиеЗатраты" id="70">
+							<DataPath>Список.СуммаОбщиеЗатраты</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Width>3</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="80"/>
+							<ContextMenu name="СуммаОбщиеЗатратыКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="СуммаОбщиеЗатратыРасширеннаяПодсказка" id="72"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Валюта</Field>
+				<Field>Список.Кошелек</Field>
+				<Field>Список.КошелекПриемник</Field>
+				<Field>Список.ТипОперации</Field>
+				<Field>Список.ФизЛицо</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументОперация.Ссылка,
+	ДокументОперация.Дата,
+	ДокументОперация.ТипОперации,
+	ДокументОперация.Кошелек,
+	ВЫБОР
+		КОГДА ДокументОперация.ТипОперации = ЗНАЧЕНИЕ(перечисление.типыОпераций.перевод)
+			ТОГДА ДокументОперация.КошелекПриемник
+		КОГДА ДокументОперация.ТипОперации = ЗНАЧЕНИЕ(перечисление.типыОпераций.Долги)
+			ТОГДА ДокументОперация.ФизЛицо
+		ИНАЧЕ ДокументОперация.Статья
+	КОНЕЦ КАК Статья,
+	ВЫБОР
+		КОГДА ДокументОперация.ТипОперации = ЗНАЧЕНИЕ(перечисление.типыОпераций.расход)
+			ТОГДА -ДокументОперация.Сумма
+		КОГДА ДокументОперация.ТипОперации = ЗНАЧЕНИЕ(перечисление.типыОпераций.Долги)
+			ТОГДА ВЫБОР
+					КОГДА ДокументОперация.ТипДолга = ЗНАЧЕНИЕ(перечисление.ТипыДолгов.дебет)
+						ТОГДА -ДокументОперация.Сумма
+					ИНАЧЕ ДокументОперация.Сумма
+				КОНЕЦ
+		ИНАЧЕ ДокументОперация.Сумма
+	КОНЕЦ КАК Сумма,
+	ДокументОперация.Комментарий,
+	ДокументОперация.КошелекПриемник,
+	ДокументОперация.ФизЛицо,
+	ДокументОперация.Метка,
+	ДокументОперация.Кошелек.Валюта КАК Валюта,
+	ВЫБОР
+		КОГДА ДокументОперация.ТипОперации = ЗНАЧЕНИЕ(перечисление.типыОпераций.расход)
+			ТОГДА -ДокументОперация.СуммаОбщиеЗатраты
+		ИНАЧЕ ДокументОперация.СуммаОбщиеЗатраты
+	КОНЕЦ КАК СуммаОбщиеЗатраты
+ИЗ
+	Документ.Операция КАК ДокументОперация</QueryText>
+				<MainTable>Document.Операция</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УдалитьОперацию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить операцию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить операцию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьОперацию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

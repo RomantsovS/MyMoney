@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Reread</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CheckBoxField name="Использовать" id="49">
+			<DataPath>Объект.Использовать</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="ИспользоватьРасширеннаяПодсказка" id="51"/>
+		</CheckBoxField>
+		<InputField name="Наименование" id="26">
+			<DataPath>Объект.Description</DataPath>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="28"/>
+		</InputField>
+		<InputField name="Код" id="1">
+			<DataPath>1/-2</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Кошелек" id="29">
+			<DataPath>Объект.Кошелек</DataPath>
+			<ContextMenu name="КошелекКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="КошелекРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<InputField name="ТипОперации" id="32">
+			<DataPath>Объект.ТипОперации</DataPath>
+			<ContextMenu name="ТипОперацииКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ТипОперацииРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблоны</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<InputField name="НомерТелефона" id="4">
+					<DataPath>Объект.НомерТелефона</DataPath>
+					<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">НомерТелефонаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СтрокаШаблонКарта" id="52">
+					<DataPath>СтрокаШаблонКарта</DataPath>
+					<ContextMenu name="СтрокаШаблонКартаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="СтрокаШаблонКартаРасширеннаяПодсказка" id="54"/>
+					<Events>
+						<Event name="OnChange">ШаблонКартаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СтрокаШаблонТипОперации" id="55">
+					<DataPath>СтрокаШаблонТипОперации</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип операции</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СтрокаШаблонТипОперацииКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="СтрокаШаблонТипОперацииРасширеннаяПодсказка" id="57"/>
+					<Events>
+						<Event name="OnChange">ШаблонТипОперацииПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ШаблонСумма" id="43">
+					<DataPath>Объект.ШаблонСумма</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст в СМС, сразу перед которым следует искать данные о сумме до первого пробела</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ContextMenu name="ШаблонСуммаКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ШаблонСуммаРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ШаблонКомментарий" id="46">
+					<DataPath>Объект.ШаблонКомментарий</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст в СМС, сразу после которого следует искать данные о комментарии до первой точки. При пустом значении шаблона весь текст СМС будет попадать в комментарий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ContextMenu name="ШаблонКомментарийКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ШаблонКомментарийРасширеннаяПодсказка" id="48"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ШаблоныЧтенияСМС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СтрокаШаблонКарта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Карта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтрокаШаблонТипОперации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка шаблон тип операции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>CommonCommand.УдалениеЭлементаСПроверкой</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

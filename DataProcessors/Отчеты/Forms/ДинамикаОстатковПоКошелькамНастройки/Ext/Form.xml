@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка остатков по кошелькам</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ОтборВалюта" id="44">
+			<DataPath>ОтборВалюта</DataPath>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="ОтборВалютаКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="ОтборВалютаРасширеннаяПодсказка" id="46"/>
+			<Events>
+				<Event name="StartChoice">ОтборВалютаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ОтборКошелек" id="41">
+			<DataPath>ОтборКошелек</DataPath>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="ОтборКошелекКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ОтборКошелекРасширеннаяПодсказка" id="43"/>
+			<Events>
+				<Event name="OnChange">ОтборКошелекПриИзменении</Event>
+				<Event name="StartChoice">ОтборКошелекНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="Период" id="4">
+			<DataPath>Период</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Периодичность" id="7">
+			<DataPath>Периодичность</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+			<ContextMenu name="ПериодичностьКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПериодичностьРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ПериодичностьПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ВалютаОтчета" id="23">
+			<DataPath>ВалютаОтчета</DataPath>
+			<ContextMenu name="ВалютаОтчетаКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="ВалютаОтчетаРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<CheckBoxField name="ВыводитьСериюКурса" id="35">
+			<DataPath>ВыводитьСериюКурса</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыводитьСериюКурсаКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ВыводитьСериюКурсаРасширеннаяПодсказка" id="37"/>
+			<Events>
+				<Event name="OnChange">ВыводитьСериюКурсаПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="ВалютаКурса" id="32">
+			<DataPath>ВалютаКурса</DataPath>
+			<ContextMenu name="ВалютаКурсаКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ВалютаКурсаРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<CheckBoxField name="ВыводитьСериюДолги" id="26">
+			<DataPath>ВыводитьСериюДолги</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыводитьСериюДолгиКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ВыводитьСериюДолгиРасширеннаяПодсказка" id="28"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВычитатьДолгиИзОстатка" id="29">
+			<DataPath>ВычитатьДолгиИзОстатка</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВычитатьДолгиИзОстаткаКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ВычитатьДолгиИзОстаткаРасширеннаяПодсказка" id="31"/>
+		</CheckBoxField>
+		<InputField name="ТипОтображаемойДиаграммы" id="38">
+			<DataPath>ТипОтображаемойДиаграммы</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="ТипОтображаемойДиаграммыКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ТипОтображаемойДиаграммыРасширеннаяПодсказка" id="40"/>
+			<Events>
+				<Event name="OnChange">ТипОтображаемойДиаграммыПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="Группа1" id="10">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация2" id="17">
+					<Width>1</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="19"/>
+				</LabelDecoration>
+				<Button name="Готово" id="12">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Готово</CommandName>
+					<ExtendedTooltip name="ГотовоРасширеннаяПодсказка" id="13"/>
+				</Button>
+				<LabelDecoration name="Декорация1" id="14">
+					<Width>1</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="16"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Отчеты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Период" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Периодичность" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Периодичность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.Периодичность</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ВалютаОтчета" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта отчета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьСериюДолги" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить серию долги</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВычитатьДолгиИзОстатка" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вычитать долги из остатка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВалютаКурса" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта курса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьСериюКурса" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить серию курса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипОтображаемойДиаграммы" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип отображаемой диаграммы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ОтборКошелек" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор кошелек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Кошельки</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборВалюта" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор валюта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Готово" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Готово</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Готово</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

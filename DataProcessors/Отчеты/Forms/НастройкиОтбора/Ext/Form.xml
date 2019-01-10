@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>Swipe</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<Page name="СтраницаОтбор" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница отбор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница отбор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОтборРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<InputField name="Период" id="42">
+							<DataPath>Период</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<InputField name="Период2" id="58">
+							<DataPath>Период2</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="Период2КонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="Период2РасширеннаяПодсказка" id="60"/>
+						</InputField>
+						<InputField name="ОтборВалюта" id="55">
+							<DataPath>ОтборВалюта</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ОтборВалютаКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ОтборВалютаРасширеннаяПодсказка" id="57"/>
+							<Events>
+								<Event name="StartChoice">ОтборВалютаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтборКошелек" id="30">
+							<DataPath>ОтборКошелек</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ОтборКошелекКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ОтборКошелекРасширеннаяПодсказка" id="32"/>
+							<Events>
+								<Event name="StartChoice">ОтборКошелекНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтборСтатья" id="33">
+							<DataPath>ОтборСтатья</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ОтборСтатьяКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ОтборСтатьяРасширеннаяПодсказка" id="35"/>
+							<Events>
+								<Event name="StartChoice">ОтборСтатьяНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтборТипОперации" id="36">
+							<DataPath>ОтборТипОперации</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ОтборТипОперацииКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ОтборТипОперацииРасширеннаяПодсказка" id="38"/>
+							<Events>
+								<Event name="StartChoice">ОтборТипОперацииНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтборМетка" id="39">
+							<DataPath>ОтборМетка</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ОтборМеткаКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ОтборМеткаРасширеннаяПодсказка" id="41"/>
+							<Events>
+								<Event name="StartChoice">ОтборМеткаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОтборФизЛицо" id="61">
+							<DataPath>ОтборФизЛицо</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ОтборФизЛицоКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ОтборФизЛицоРасширеннаяПодсказка" id="63"/>
+							<Events>
+								<Event name="StartChoice">ОтборФизЛицоНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Группа1" id="45">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация2" id="47">
+									<Width>1</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="49"/>
+								</LabelDecoration>
+								<Button name="Готово1" id="50">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.Готово</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Готово</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="Готово1РасширеннаяПодсказка" id="51"/>
+								</Button>
+								<LabelDecoration name="Декорация1" id="52">
+									<Width>1</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="54"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОформление" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница оформление</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница оформление</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОформлениеРасширеннаяПодсказка" id="69"/>
+				</Page>
+				<Page name="СтраницаПоля" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница поля</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница поля</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПоляРасширеннаяПодсказка" id="71"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Отчеты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОтборКошелек" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор кошелек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Кошельки</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборСтатья" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор статья</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Статьи</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборТипОперации" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор тип операции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:EnumRef.ТипыОпераций</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборМетка" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор метка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Метки</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="Период" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборВалюта" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор валюта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="Период2" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборФизЛицо" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор физ лицо</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.ФизЛица</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Готово" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Готово</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

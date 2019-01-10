@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мои деньги</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницыВидаПароля" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы вида пароля</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы вида пароля</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыВидаПароляРасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<Page name="СтраницаПароль" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница пароль</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница пароль</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПарольРасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<LabelDecoration name="ОтступКоманднойПанели1" id="20">
+							<Width>4</Width>
+							<Height>1</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+							<ContextMenu name="ОтступКоманднойПанели1КонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ОтступКоманднойПанели1РасширеннаяПодсказка" id="22"/>
+						</LabelDecoration>
+						<InputField name="Пароль" id="1">
+							<DataPath>Пароль</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<Width>20</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<LabelDecoration name="ОтступКоманднойПанели2" id="108">
+							<Width>4</Width>
+							<Height>1</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+							<ContextMenu name="ОтступКоманднойПанели2КонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="ОтступКоманднойПанели2РасширеннаяПодсказка" id="110"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаКоманднаяПанель" id="9">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа командная панель</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="10"/>
+							<ChildItems>
+								<LabelDecoration name="РазделительКоманднойПанели1" id="17">
+									<Width>1</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="РазделительКоманднойПанели1КонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="РазделительКоманднойПанели1РасширеннаяПодсказка" id="19"/>
+								</LabelDecoration>
+								<Button name="КомандаОК" id="4">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаОК</CommandName>
+									<Font ref="style:LargeTextFont" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>  Войти  </v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КомандаОКРасширеннаяПодсказка" id="5"/>
+								</Button>
+								<LabelDecoration name="РазделительКоманднойПанели" id="11">
+									<Width>1</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="РазделительКоманднойПанелиКонтекстноеМеню" id="12"/>
+									<ExtendedTooltip name="РазделительКоманднойПанелиРасширеннаяПодсказка" id="13"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПинКод" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница пин код</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница пин код</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПинКодРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация11" id="122">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация11КонтекстноеМеню" id="123"/>
+							<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="124"/>
+						</PictureDecoration>
+						<UsualGroup name="ГруппаОтображениеПинКода" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отображение пин кода</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отображение пин кода</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтображениеПинКодаРасширеннаяПодсказка" id="33"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация10" id="119">
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Введите ваш пароль</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="Декорация10КонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="121"/>
+								</LabelDecoration>
+								<LabelField name="ОтображениеПинКода1" id="113">
+									<DataPath>ОтображениеПинКода</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+									<ContextMenu name="ОтображениеПинКода1КонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ОтображениеПинКода1РасширеннаяПодсказка" id="115"/>
+								</LabelField>
+								<LabelDecoration name="ДекорацияОшибка" id="105">
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>style:NegativeTextColor</TextColor>
+									<Font ref="style:NormalTextFont" kind="StyleItem"/>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="ДекорацияОшибкаКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ДекорацияОшибкаРасширеннаяПодсказка" id="107"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКнопок" id="111">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="112"/>
+							<ChildItems>
+								<UsualGroup name="Группа1" id="37">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="38"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация2" id="39">
+											<Width>1</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="40"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="41"/>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка1" id="42">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка1</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>1</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>1</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка1КонтекстноеМеню" id="43"/>
+											<ExtendedTooltip name="Кнопка1РасширеннаяПодсказка" id="44"/>
+											<Events>
+												<Event name="Click">Кнопка1Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка2" id="45">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка2</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>2</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>2</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка2КонтекстноеМеню" id="46"/>
+											<ExtendedTooltip name="Кнопка2РасширеннаяПодсказка" id="47"/>
+											<Events>
+												<Event name="Click">Кнопка2Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка3" id="48">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка3</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>3</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>3</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка3КонтекстноеМеню" id="49"/>
+											<ExtendedTooltip name="Кнопка3РасширеннаяПодсказка" id="50"/>
+											<Events>
+												<Event name="Click">Кнопка3Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Декорация3" id="51">
+											<Width>1</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация3КонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="53"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа2" id="54">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа2</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа2</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="55"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация4" id="56">
+											<Width>1</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация4КонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="58"/>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка4" id="59">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка4</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>4</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>4</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка4КонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="Кнопка4РасширеннаяПодсказка" id="61"/>
+											<Events>
+												<Event name="Click">Кнопка4Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка5" id="62">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка5</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>5</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>5</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка5КонтекстноеМеню" id="63"/>
+											<ExtendedTooltip name="Кнопка5РасширеннаяПодсказка" id="64"/>
+											<Events>
+												<Event name="Click">Кнопка5Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка6" id="65">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка6</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>6</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>6</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка6КонтекстноеМеню" id="66"/>
+											<ExtendedTooltip name="Кнопка6РасширеннаяПодсказка" id="67"/>
+											<Events>
+												<Event name="Click">Кнопка6Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Декорация5" id="68">
+											<Width>1</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация5КонтекстноеМеню" id="69"/>
+											<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="70"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа3" id="71">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа3</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа3</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="72"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация6" id="73">
+											<Width>1</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация6КонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="75"/>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка7" id="76">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка7</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>7</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>7</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка7КонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="Кнопка7РасширеннаяПодсказка" id="78"/>
+											<Events>
+												<Event name="Click">Кнопка7Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка8" id="79">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка8</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>8</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>8</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка8КонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="Кнопка8РасширеннаяПодсказка" id="81"/>
+											<Events>
+												<Event name="Click">Кнопка8Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка9" id="82">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка9</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>9</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>9</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка9КонтекстноеМеню" id="83"/>
+											<ExtendedTooltip name="Кнопка9РасширеннаяПодсказка" id="84"/>
+											<Events>
+												<Event name="Click">Кнопка9Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Декорация7" id="85">
+											<Width>1</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация7КонтекстноеМеню" id="86"/>
+											<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="87"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа4" id="88">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа4</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа4</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="89"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация8" id="90">
+											<Width>1</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация8КонтекстноеМеню" id="91"/>
+											<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="92"/>
+										</PictureDecoration>
+										<PictureDecoration name="КнопкаОтмена" id="93">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка отмена</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отмена</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>CANCEL</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="КнопкаОтменаКонтекстноеМеню" id="94"/>
+											<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="95"/>
+											<Events>
+												<Event name="Click">КнопкаОтменаНажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Кнопка0" id="96">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Font ref="style:ExtraLargeTextFont" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка0</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>0</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>0</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="Кнопка0КонтекстноеМеню" id="97"/>
+											<ExtendedTooltip name="Кнопка0РасширеннаяПодсказка" id="98"/>
+											<Events>
+												<Event name="Click">Кнопка0Нажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="КнопкаУдалить" id="99">
+											<Width>6</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кнопка удалить</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<NonselectedPictureText>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>←</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>&lt;-</v8:content>
+												</v8:item>
+											</NonselectedPictureText>
+											<ContextMenu name="КнопкаУдалитьКонтекстноеМеню" id="100"/>
+											<ExtendedTooltip name="КнопкаУдалитьРасширеннаяПодсказка" id="101"/>
+											<Events>
+												<Event name="Click">КнопкаУдалитьНажатие</Event>
+											</Events>
+										</PictureDecoration>
+										<PictureDecoration name="Декорация9" id="102">
+											<Width>1</Width>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="Декорация9КонтекстноеМеню" id="103"/>
+											<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="104"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<PictureDecoration name="Декорация1" id="116">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="118"/>
+						</PictureDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Пароль" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПравильныйПароль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правильный пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображениеПинКода" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение пин кода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОК</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ЗаголовокПоляВводаПароля">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ЗаголовокКнопкиОК">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ЗаголовокФормы">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ПравильныйПароль">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

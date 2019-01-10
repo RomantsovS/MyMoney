@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<languageSettings>
+		<currentLanguage>ru</currentLanguage>
+		<defaultLanguage>ru</defaultLanguage>
+		<languageInfo>
+			<id>ru</id>
+			<code>Русский</code>
+			<description>Русский</description>
+		</languageInfo>
+	</languageSettings>
+	<columns>
+		<size>1</size>
+		<columnsItem>
+			<index>0</index>
+			<column>
+				<formatIndex>1</formatIndex>
+			</column>
+		</columnsItem>
+	</columns>
+	<rowsItem>
+		<index>0</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;html&gt;
+&lt;body&gt;
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.9.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Настройки отчета "динамика остатков по кошелькам" переработаны к общей логике настроек СКД.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• В отчет по перемещениям добавлен при расшифровке добавлен обязательный фильтр по типу операции "перевод".&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Изменена работа с настройками СКД в отчетах. Настройки, у которых снят признак "использование", не будут пропадать.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Доработана логика поиска существующей операции в форме создания операций из СМС: совпадение по кошельку или кошельку приёмнику.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлена обработка "Групповое изменение реквизитов".&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.8.2&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Правка ошибки обнуления суммы долга в общих затратах.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Правка отчета по долгам.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.8.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Правка определения видимости ФизЛица в форме Операции.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлен отчет по переводам.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.7.2&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Правка ошибки в отчете по общим расходам.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.7.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Общая форма настроек очтетод добавлена к отчетам: текущие остатки, сравнение периодов, отчет по долгам.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• В отчете динамика остатков по кошелькам поправлена периодичность в разрезе дня.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• В форме создания операция из СМС доработан отбор по стандартному периоду.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.6.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• В отчет по расходам добавлена общая форма настроек вместо отдельных настроек структуры и отборов.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Общая форма так же даёт возможность настраивать оформление параметра максимальной ширины полей.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Правки ширины колонок в отчетах&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.5.3&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлена константа для указания часового пояса. Значение используется для определения времени СМС&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.5.2&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Переработана логика поиска СМС по шаблонам.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.5.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлен отчет по долгам.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлено чтение СМС и создание из них операций.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.4.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Поправлен пересчет суммы приемника для операций перевода.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Отчет Динамика остатков по кошелькам переведен на СКД. Добавлена возможность сохранения настроек.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.3.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Поправлен пересчет суммы общих затрат и суммы долга при изменении суммы операции.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Переработан механизм проведения документов.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Унифицированы команды общих настроек отчетов.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.2.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• В отчете Динамика остатков по кошелькам периодичность Запись заменена на Регистратор.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Поправлена логика учета долга при отражении общих затрат с суммой общих затрат отличной от суммы.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Доработан вид операции Сторно.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлен тип долга Взаимозачет, позволяющий перекинуть задолженность на другую метку.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.1.26&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Поправлены ошибки в настройке отчета Динамика остатков по кошелькам.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.1.25&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Для отчета по расходам добавлено автосохранение текущих настроек при закрытии.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Для отчета Динамика остатков по кошелькам добавлен вывод диаграммы с типом "биржевая свеча".&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Для видов операций Перемещение добавлен реквизит Метка.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• В регистр Долги добавлено измерение Метка.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• В форме списка долгов добавлен разрез по меткам с возможностью ввести сумму по указанной метке. В этом случае разница суммы операции и суммы метки будет учтена по пустой метке&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.1.24&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Операция с типом Долги по типам долгов Зачисление и Списание отражается в регистре затрат как Доход / Расход.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• В отчете по расходам убран модальный вызов при сохранении настройки .&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• В отчете "Динамика остатков по кошелькам" добавлен вывод серии Долги и Курс валюты. При выводе остатков без отбора по кошельку добавлена возможность вычесть из остатка сумму долгов&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.1.22&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлен отчет Текущие остатки.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.1.21&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Исправлена ошибка создания операции с рабочего стола.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.1.20&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлена возможность списания долгов без учета расхождения долгов/затрат.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Отчет остатки партий валют переделан с использованием СКД.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.1.19&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Исправлена ошибка загрузки бекапа через почту: не загружались метки.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.1.18&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлена возможность отражать затраты без списания по кошельку.&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.1.3&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Впрочем, ничего нового.&lt;br&gt;
+&lt;/body&gt;
+&lt;/html&gt;</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<templateMode>true</templateMode>
+	<defaultFormatIndex>2</defaultFormatIndex>
+	<height>1</height>
+	<vgRows>1</vgRows>
+	<format>
+		<width>1025</width>
+	</format>
+	<format>
+		<width>72</width>
+	</format>
+</document>

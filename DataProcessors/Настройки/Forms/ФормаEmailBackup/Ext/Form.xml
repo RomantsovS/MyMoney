@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<CheckBoxField name="ИспользоватьБекапНаПочту" id="13">
+			<DataPath>НаборКонстант.ИспользоватьБекапНаПочту</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьБекапНаПочтуКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИспользоватьБекапНаПочтуРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">ИспользоватьБекапНаПочтуПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="ДатаПоследнегоБекапа" id="1">
+			<DataPath>НаборКонстант.ДатаПоследнегоБекапа</DataPath>
+			<ContextMenu name="ДатаПоследнегоБекапаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДатаПоследнегоБекапаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПериодичностьБекапа" id="4">
+			<DataPath>НаборКонстант.ПериодичностьБекапа</DataPath>
+			<ContextMenu name="ПериодичностьБекапаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПериодичностьБекапаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="АдресПочтыБекапа" id="7">
+			<DataPath>НаборКонстант.АдресПочтыБекапа</DataPath>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="АдресПочтыБекапаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АдресПочтыБекапаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ПарольПочтыБекапа" id="10">
+			<DataPath>НаборКонстант.ПарольПочтыБекапа</DataPath>
+			<PasswordMode>true</PasswordMode>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="ПарольПочтыБекапаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПарольПочтыБекапаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<LabelDecoration name="Декорация4" id="31">
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="Декорация4КонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="33"/>
+		</LabelDecoration>
+		<Button name="ПроверитьСоединениеСПочтой" id="26">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПроверитьСоединениеСПочтой</CommandName>
+			<ExtendedTooltip name="ПроверитьСоединениеСПочтойРасширеннаяПодсказка" id="27"/>
+		</Button>
+		<LabelDecoration name="Декорация1" id="28">
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="30"/>
+		</LabelDecoration>
+		<UsualGroup name="Группа1" id="16">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация2" id="18">
+					<Width>1</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="20"/>
+				</LabelDecoration>
+				<Button name="ЗаписатьИЗакрыть" id="21">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Готово</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Готово</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗаписатьИЗакрытьРасширеннаяПодсказка" id="22"/>
+				</Button>
+				<LabelDecoration name="Декорация3" id="23">
+					<Width>1</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация3КонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="25"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьСоединениеСПочтой" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить соединение с почтой</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить соединение с почтой</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьСоединениеСПочтой</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

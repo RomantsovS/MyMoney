@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="ОтчетПоРасходам" id="1">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ОтчетПоРасходам</CommandName>
+			<ExtendedTooltip name="ОтчетПоРасходамРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<Button name="ОстаткиПоКошелькам" id="3">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ДинамикаОстатковПоКошелькам</CommandName>
+			<ExtendedTooltip name="ОстаткиПоКошелькамРасширеннаяПодсказка" id="4"/>
+		</Button>
+		<Button name="ТекущиеОстатки" id="17">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ТекущиеОстатки</CommandName>
+			<ExtendedTooltip name="ТекущиеОстаткиРасширеннаяПодсказка" id="18"/>
+		</Button>
+		<Button name="ОтчетСравнениеПериодов" id="13">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ОтчетСравнениеПериодов</CommandName>
+			<ExtendedTooltip name="ОтчетСравнениеПериодовРасширеннаяПодсказка" id="14"/>
+		</Button>
+		<Button name="ОтчетСравнениеПоСтатьям" id="5">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ОтчетСравнениеПоСтатьям</CommandName>
+			<ExtendedTooltip name="ОтчетСравнениеПоСтатьямРасширеннаяПодсказка" id="6"/>
+		</Button>
+		<Button name="ОстаткиПартииВалют" id="7">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ОстаткиПартииВалют</CommandName>
+			<ExtendedTooltip name="ОстаткиПартииВалютРасширеннаяПодсказка" id="8"/>
+		</Button>
+		<Button name="ПродажиПартийВалют" id="9">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ПродажиПартийВалют</CommandName>
+			<ExtendedTooltip name="ПродажиПартийВалютРасширеннаяПодсказка" id="10"/>
+		</Button>
+		<Button name="ОтчетПоДолгам" id="19">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ОтчетПоДолгам</CommandName>
+			<ExtendedTooltip name="ОтчетПоДолгамРасширеннаяПодсказка" id="20"/>
+		</Button>
+		<Button name="ОтчетПоРасходамОбщие" id="11">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ОтчетПоРасходамОбщие</CommandName>
+			<ExtendedTooltip name="ОтчетПоРасходамОбщиеРасширеннаяПодсказка" id="12"/>
+		</Button>
+		<Button name="ПроверкаДолгиЗатраты" id="15">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ПроверкаДолгиЗатраты</CommandName>
+			<ExtendedTooltip name="ПроверкаДолгиЗатратыРасширеннаяПодсказка" id="16"/>
+		</Button>
+		<Button name="ОтчетПоПереводам" id="21">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ОтчетПоПереводам</CommandName>
+			<ExtendedTooltip name="ОтчетПоПереводамРасширеннаяПодсказка" id="22"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Отчеты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОтчетПоРасходам" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по расходам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по расходам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетПоРасходам</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДинамикаОстатковПоКошелькам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Динамика остатков по кошелькам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Динамика остатков по кошелькам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДинамикаОстатковПоКошелькам</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтчетСравнениеПоСтатьям" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет сравнение по статьям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет сравнение по статьям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетСравнениеПоСтатьям</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОстаткиПартииВалют" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки партии валют</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки партии валют</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПартииВалют</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПродажиПартийВалют" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продажи партий валют</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продажи партий валют</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродажиПартийВалют</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтчетПоРасходамОбщие" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по расходам общие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по расходам общие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетПоРасходамОбщие</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтчетСравнениеПериодов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет сравнение периодов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет сравнение периодов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетСравнениеПериодов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверкаДолгиЗатраты" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка долги затраты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка долги затраты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверкаДолгиЗатраты</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ТекущиеОстатки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущие остатки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущие остатки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТекущиеОстатки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтчетПоДолгам" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по долгам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по долгам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетПоДолгам</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтчетПоПереводам" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по переводам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по переводам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетПоПереводам</Action>
+		</Command>
+	</Commands>
+</Form>

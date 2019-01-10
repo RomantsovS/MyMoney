@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<CommandBarLocation>None</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ВалютаУчета" id="4">
+			<DataPath>Константа_ВалютаУчета</DataPath>
+			<ContextMenu name="ВалютаУчетаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ВалютаУчетаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ВалютаУчетаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ОсновнойКошелек" id="1">
+			<DataPath>Константа_ОсновнойКошелек</DataPath>
+			<ContextMenu name="ОсновнойКошелекКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОсновнойКошелекРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ОсновнойКошелекПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="НомерВерсииКонфигурации" id="7">
+			<DataPath>НаборКонстант.ТекущаяВерсияПриложения</DataPath>
+			<ContextMenu name="НомерВерсииКонфигурацииКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НомерВерсииКонфигурацииРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Button name="EmailBackup" id="34">
+			<Type>UsualButton</Type>
+			<Height>1</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.EmailBackup</CommandName>
+			<ExtendedTooltip name="EmailBackupРасширеннаяПодсказка" id="35"/>
+		</Button>
+		<InputField name="КаталогХраненияФайлов" id="36">
+			<DataPath>Константа_КаталогХраненияФайлов</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КаталогХраненияФайловКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="КаталогХраненияФайловРасширеннаяПодсказка" id="38"/>
+			<Events>
+				<Event name="OnChange">КаталогХраненияФайловПриИзменении</Event>
+				<Event name="StartChoice">КаталогХраненияФайловНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ИспользоватьЧтениеСМСДляСозданияОпераций" id="41">
+			<DataPath>Константа_ИспользоватьЧтениеСМСДляСозданияОпераций</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьЧтениеСМСДляСозданияОперацийКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ИспользоватьЧтениеСМСДляСозданияОперацийРасширеннаяПодсказка" id="43"/>
+			<Events>
+				<Event name="OnChange">ИспользоватьЧтениеСМСДляСозданияОперацийПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="Константа_ЧасовойПоясUTC" id="44">
+			<DataPath>Константа_ЧасовойПоясUTC</DataPath>
+			<ContextMenu name="Константа_ЧасовойПоясUTCКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="Константа_ЧасовойПоясUTCРасширеннаяПодсказка" id="46"/>
+			<Events>
+				<Event name="OnChange">Константа_ЧасовойПоясUTCПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаПарольДляВхода" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Защита входа:</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пароль для входа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<Group>Horizontal</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаПарольДляВходаРасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<Button name="ИзменитьПароль" id="25">
+					<Type>UsualButton</Type>
+					<HorizontalStretch>true</HorizontalStretch>
+					<CommandName>Form.Command.ИзменитьПароль</CommandName>
+					<ExtendedTooltip name="ИзменитьПарольРасширеннаяПодсказка" id="26"/>
+				</Button>
+				<Button name="УдалитьПароль" id="27">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.УдалитьПароль</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удалить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="УдалитьПарольРасширеннаяПодсказка" id="28"/>
+				</Button>
+				<Button name="ПоказатьПароль" id="29">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПоказатьПароль</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показать</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПоказатьПарольРасширеннаяПодсказка" id="30"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ОткрытьЧтоНового" id="39">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.ОткрытьЧтоНового</CommandName>
+			<ExtendedTooltip name="ОткрытьЧтоНовогоРасширеннаяПодсказка" id="40"/>
+		</Button>
+		<UsualGroup name="Группа1" id="13">
+			<Visible>false</Visible>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация2" id="15">
+					<Width>1</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="17"/>
+				</LabelDecoration>
+				<Button name="ЗаписатьИЗакрыть" id="21">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Готово</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Готово</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗаписатьИЗакрытьРасширеннаяПодсказка" id="22"/>
+				</Button>
+				<LabelDecoration name="Декорация3" id="18">
+					<Width>1</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация3КонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="20"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ПарольДляВхода</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Константа_ИспользоватьЧтениеСМСДляСозданияОпераций" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чтение СМС для создания операций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВалютаУчетаДоИзменения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта учета до изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Константа_ВалютаУчета" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта учёта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Константа_ОсновнойКошелек" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной кошелек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Кошельки</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Константа_КаталогХраненияФайлов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог хранения файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Константа_ЧасовойПоясUTC" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Часовой пояс UTC</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЧтениеСМСДляСозданияОпераций</Item>
+			</FunctionalOptions>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИзменитьПароль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить пароль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить пароль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьПароль</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьПароль" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить пароль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить пароль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьПароль</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьПароль" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПароль</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="EmailBackup" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Email backup</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Email backup</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Бекап</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>EmailBackUp</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьЧтоНового" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Что нового</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть что нового</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьЧтоНового</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
