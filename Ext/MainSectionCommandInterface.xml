@@ -101,6 +101,16 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.Отчеты.Command.ВыбратьНастройку">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ГрупповоеИзменениеРеквизитов.Command.ГрупповоеИзменениеРеквизитов">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Constant.ДатаПоследнегоБекапа.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>

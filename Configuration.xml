@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor/>
-			<Version>1.9.1</Version>
+			<Version>1.9.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -81,7 +81,7 @@
 				</v8:pair>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Telephony</v8:Key>
-					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
 				</v8:pair>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">PushNotification</v8:Key>
@@ -156,6 +156,7 @@
 			<SessionParameter>ОбщиеПараметры</SessionParameter>
 			<SessionParameter>ОткрыватьЧтоНового</SessionParameter>
 			<SessionParameter>ПарольПроверен</SessionParameter>
+			<Role>ПолныеПрава</Role>
 			<CommonTemplate>ЧтоНового</CommonTemplate>
 			<CommonModule>БекапЧерезПочту</CommonModule>
 			<CommonModule>БекапЧерезПочтуКлиент</CommonModule>
