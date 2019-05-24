@@ -318,127 +318,39 @@
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
-		<Pages name="ГруппаСтраницыМетка" id="172">
+		<UsualGroup name="ГруппаМетка" id="165">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа страницы метка</v8:content>
+					<v8:content>Группа метка</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа страницы метка</v8:content>
+					<v8:content>Группа метка</v8:content>
 				</v8:item>
 			</ToolTip>
-			<PagesRepresentation>Swipe</PagesRepresentation>
-			<ExtendedTooltip name="ГруппаСтраницыМеткаРасширеннаяПодсказка" id="173"/>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ГруппаМеткаРасширеннаяПодсказка" id="166"/>
 			<ChildItems>
-				<Page name="РасшифровкаБезРазбиения" id="165">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Расшифровка без разбиения</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Расшифровка без разбиения</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>HorizontalIfPossible</Group>
-					<ExtendedTooltip name="РасшифровкаБезРазбиенияРасширеннаяПодсказка" id="166"/>
-					<ChildItems>
-						<InputField name="РасшифровкаБезРазбиенияМетка" id="94">
-							<DataPath>Items.Расшифровка.CurrentData.Метка</DataPath>
-							<ContextMenu name="РасшифровкаБезРазбиенияМеткаКонтекстноеМеню" id="95"/>
-							<ExtendedTooltip name="РасшифровкаБезРазбиенияМеткаРасширеннаяПодсказка" id="96"/>
-							<Events>
-								<Event name="OnChange">МеткаПриИзменении</Event>
-							</Events>
-						</InputField>
-						<InputField name="РасшифровкаБезРазбиенияСумма" id="200">
-							<DataPath>Items.Расшифровка.CurrentData.Сумма</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="РасшифровкаБезРазбиенияСуммаКонтекстноеМеню" id="201"/>
-							<ExtendedTooltip name="РасшифровкаБезРазбиенияСуммаРасширеннаяПодсказка" id="202"/>
-						</InputField>
-						<InputField name="СуммаДолг1" id="162">
-							<DataPath>Объект.СуммаДолг</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<ContextMenu name="СуммаДолг1КонтекстноеМеню" id="163"/>
-							<ExtendedTooltip name="СуммаДолг1РасширеннаяПодсказка" id="164"/>
-						</InputField>
-					</ChildItems>
-				</Page>
-				<Page name="РасшифровкаСписком" id="174">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Расшифровка списком</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Расшифровка списком</v8:content>
-						</v8:item>
-					</ToolTip>
-					<ExtendedTooltip name="РасшифровкаСпискомРасширеннаяПодсказка" id="175"/>
-					<ChildItems>
-						<Table name="Расшифровка" id="178">
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.Расшифровка</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="РасшифровкаКонтекстноеМеню" id="179"/>
-							<AutoCommandBar name="РасшифровкаКоманднаяПанель" id="180"/>
-							<ExtendedTooltip name="РасшифровкаРасширеннаяПодсказка" id="181"/>
-							<SearchStringAddition name="РасшифровкаСтрокаПоиска" id="182">
-								<AdditionSource>
-									<Item>Расшифровка</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="РасшифровкаСтрокаПоискаКонтекстноеМеню" id="183"/>
-								<ExtendedTooltip name="РасшифровкаСтрокаПоискаРасширеннаяПодсказка" id="184"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="РасшифровкаСостояниеПросмотра" id="185">
-								<AdditionSource>
-									<Item>Расшифровка</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="РасшифровкаСостояниеПросмотраКонтекстноеМеню" id="186"/>
-								<ExtendedTooltip name="РасшифровкаСостояниеПросмотраРасширеннаяПодсказка" id="187"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="РасшифровкаУправлениеПоиском" id="188">
-								<AdditionSource>
-									<Item>Расшифровка</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="РасшифровкаУправлениеПоискомКонтекстноеМеню" id="189"/>
-								<ExtendedTooltip name="РасшифровкаУправлениеПоискомРасширеннаяПодсказка" id="190"/>
-							</SearchControlAddition>
-							<ChildItems>
-								<InputField name="РасшифровкаМетка" id="194">
-									<DataPath>Объект.Расшифровка.Метка</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="РасшифровкаМеткаКонтекстноеМеню" id="195"/>
-									<ExtendedTooltip name="РасшифровкаМеткаРасширеннаяПодсказка" id="196"/>
-								</InputField>
-								<InputField name="РасшифровкаСумма" id="197">
-									<DataPath>Объект.Расшифровка.Сумма</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="РасшифровкаСуммаКонтекстноеМеню" id="198"/>
-									<ExtendedTooltip name="РасшифровкаСуммаРасширеннаяПодсказка" id="199"/>
-								</InputField>
-							</ChildItems>
-						</Table>
-					</ChildItems>
-				</Page>
+				<InputField name="Метка" id="94">
+					<DataPath>Объект.Метка</DataPath>
+					<ContextMenu name="МеткаКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="МеткаРасширеннаяПодсказка" id="96"/>
+					<Events>
+						<Event name="OnChange">МеткаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СуммаДолг1" id="162">
+					<DataPath>Объект.СуммаДолг</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="СуммаДолг1КонтекстноеМеню" id="163"/>
+					<ExtendedTooltip name="СуммаДолг1РасширеннаяПодсказка" id="164"/>
+				</InputField>
 			</ChildItems>
-		</Pages>
+		</UsualGroup>
 		<InputField name="МеткаОтправитель" id="167">
 			<DataPath>Объект.МеткаОтправитель</DataPath>
 			<ContextMenu name="МеткаОтправительКонтекстноеМеню" id="168"/>
