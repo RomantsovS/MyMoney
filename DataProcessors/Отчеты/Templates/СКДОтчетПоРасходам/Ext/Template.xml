@@ -44,6 +44,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПериодКвартал</dataPath>
 			<field>ПериодКвартал</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
 			<role>
 				<dcscom:periodNumber>10</dcscom:periodNumber>
 				<dcscom:periodType>Additional</dcscom:periodType>
@@ -94,6 +97,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПериодПолугодие</dataPath>
 			<field>ПериодПолугодие</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
 			<role>
 				<dcscom:periodNumber>11</dcscom:periodNumber>
 				<dcscom:periodType>Additional</dcscom:periodType>
@@ -102,6 +108,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПериодМесяц</dataPath>
 			<field>ПериодМесяц</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
 			<role>
 				<dcscom:periodNumber>9</dcscom:periodNumber>
 				<dcscom:periodType>Additional</dcscom:periodType>
@@ -124,7 +133,6 @@
 			<useRestriction>
 				<field>true</field>
 				<condition>true</condition>
-				<group>true</group>
 				<order>true</order>
 			</useRestriction>
 			<role>
@@ -135,6 +143,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПериодГод</dataPath>
 			<field>ПериодГод</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
 			<role>
 				<dcscom:periodNumber>12</dcscom:periodNumber>
 				<dcscom:periodType>Additional</dcscom:periodType>
@@ -162,6 +173,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПериодДень</dataPath>
 			<field>ПериодДень</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
 			<role>
 				<dcscom:periodNumber>6</dcscom:periodNumber>
 				<dcscom:periodType>Additional</dcscom:periodType>
@@ -181,6 +195,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПериодНеделя</dataPath>
 			<field>ПериодНеделя</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
 			<role>
 				<dcscom:periodNumber>7</dcscom:periodNumber>
 				<dcscom:periodType>Additional</dcscom:periodType>
@@ -200,6 +217,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПериодДекада</dataPath>
 			<field>ПериодДекада</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
 			<role>
 				<dcscom:periodNumber>8</dcscom:periodNumber>
 				<dcscom:periodType>Additional</dcscom:periodType>

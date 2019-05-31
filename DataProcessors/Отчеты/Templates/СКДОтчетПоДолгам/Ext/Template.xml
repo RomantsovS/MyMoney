@@ -62,7 +62,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма кон</v8:content>
+					<v8:content>Кон</v8:content>
 				</v8:item>
 			</title>
 			<role>
@@ -77,7 +77,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма нач</v8:content>
+					<v8:content>Нач</v8:content>
 				</v8:item>
 			</title>
 			<role>
@@ -94,6 +94,72 @@
 				<dcscom:periodType>Main</dcscom:periodType>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПриход</dataPath>
+			<field>СуммаПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаРасход</dataPath>
+			<field>СуммаРасход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодГод</dataPath>
+			<field>ПериодГод</field>
+			<role>
+				<dcscom:periodNumber>5</dcscom:periodNumber>
+				<dcscom:periodType>Additional</dcscom:periodType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=гггг</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодКвартал</dataPath>
+			<field>ПериодКвартал</field>
+			<role>
+				<dcscom:periodNumber>4</dcscom:periodNumber>
+				<dcscom:periodType>Additional</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодМесяц</dataPath>
+			<field>ПериодМесяц</field>
+			<role>
+				<dcscom:periodNumber>3</dcscom:periodNumber>
+				<dcscom:periodType>Additional</dcscom:periodType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ='гггг МММ'</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ДолгиОстаткиИОбороты.Регистратор КАК Регистратор,
@@ -103,7 +169,12 @@
 	ДолгиОстаткиИОбороты.СуммаОборот КАК СуммаОборот,
 	ДолгиОстаткиИОбороты.СуммаНачальныйОстаток КАК СуммаНач,
 	ДолгиОстаткиИОбороты.СуммаКонечныйОстаток КАК СуммаКон,
-	ДолгиОстаткиИОбороты.ПериодСекунда КАК ПериодСекунда
+	ДолгиОстаткиИОбороты.ПериодСекунда КАК ПериодСекунда,
+	ДолгиОстаткиИОбороты.СуммаПриход КАК СуммаПриход,
+	ДолгиОстаткиИОбороты.СуммаРасход КАК СуммаРасход,
+	ДолгиОстаткиИОбороты.ПериодГод КАК ПериодГод,
+	ДолгиОстаткиИОбороты.ПериодКвартал КАК ПериодКвартал,
+	ДолгиОстаткиИОбороты.ПериодМесяц КАК ПериодМесяц
 ИЗ
 	РегистрНакопления.Долги.ОстаткиИОбороты(, , Авто, , ) КАК ДолгиОстаткиИОбороты</query>
 	</dataSet>
@@ -118,6 +189,14 @@
 	<totalField>
 		<dataPath>СуммаКон</dataPath>
 		<expression>Сумма(СуммаКон)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПриход</dataPath>
+		<expression>Сумма(СуммаПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаРасход</dataPath>
+		<expression>Сумма(СуммаРасход)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>

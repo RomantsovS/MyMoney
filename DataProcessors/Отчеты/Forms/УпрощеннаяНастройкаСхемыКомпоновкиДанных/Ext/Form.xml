@@ -160,48 +160,68 @@
 								<Event name="BeforeRowChange">ОтборКомпоновкиПередНачаломИзменения</Event>
 							</Events>
 							<ChildItems>
-								<InputField name="ОтборКомпоновкиЛевоеЗначение" id="69">
-									<DataPath>ОтборКомпоновки.ЛевоеЗначение</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Поле</v8:content>
-										</v8:item>
-									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ОтборКомпоновкиЛевоеЗначениеКонтекстноеМеню" id="70"/>
-									<ExtendedTooltip name="ОтборКомпоновкиЛевоеЗначениеРасширеннаяПодсказка" id="71"/>
-								</InputField>
-								<InputField name="ОтборКомпоновкиВидСравнения" id="72">
-									<DataPath>ОтборКомпоновки.ВидСравнения</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ListChoiceMode>true</ListChoiceMode>
-									<ContextMenu name="ОтборКомпоновкиВидСравненияКонтекстноеМеню" id="73"/>
-									<ExtendedTooltip name="ОтборКомпоновкиВидСравненияРасширеннаяПодсказка" id="74"/>
-								</InputField>
-								<InputField name="ОтборКомпоновкиПравоеЗначение" id="75">
-									<DataPath>ОтборКомпоновки.ПравоеЗначение</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Значение</v8:content>
-										</v8:item>
-									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ОтборКомпоновкиПравоеЗначениеКонтекстноеМеню" id="76"/>
-									<ExtendedTooltip name="ОтборКомпоновкиПравоеЗначениеРасширеннаяПодсказка" id="77"/>
-									<Events>
-										<Event name="OnChange">ОтборКомпоновкиПравоеЗначениеПриИзменении</Event>
-									</Events>
-								</InputField>
-								<CheckBoxField name="ОтборКомпоновкиИспользование" id="146">
-									<DataPath>ОтборКомпоновки.Использование</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОтборКомпоновкиИспользованиеКонтекстноеМеню" id="147"/>
-									<ExtendedTooltip name="ОтборКомпоновкиИспользованиеРасширеннаяПодсказка" id="148"/>
-								</CheckBoxField>
+								<ColumnGroup name="ОтборКомпоновкиГруппа3" id="191">
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ОтборКомпоновкиГруппа3РасширеннаяПодсказка" id="192"/>
+									<ChildItems>
+										<ColumnGroup name="ОтборКомпоновкиГруппа1" id="181">
+											<ExtendedTooltip name="ОтборКомпоновкиГруппа1РасширеннаяПодсказка" id="182"/>
+											<ChildItems>
+												<InputField name="ОтборКомпоновкиЛевоеЗначение" id="69">
+													<DataPath>ОтборКомпоновки.ЛевоеЗначение</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Поле</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОтборКомпоновкиЛевоеЗначениеКонтекстноеМеню" id="70"/>
+													<ExtendedTooltip name="ОтборКомпоновкиЛевоеЗначениеРасширеннаяПодсказка" id="71"/>
+												</InputField>
+												<InputField name="ОтборКомпоновкиВидСравнения" id="72">
+													<DataPath>ОтборКомпоновки.ВидСравнения</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ListChoiceMode>true</ListChoiceMode>
+													<ContextMenu name="ОтборКомпоновкиВидСравненияКонтекстноеМеню" id="73"/>
+													<ExtendedTooltip name="ОтборКомпоновкиВидСравненияРасширеннаяПодсказка" id="74"/>
+													<Events>
+														<Event name="OnChange">ОтборКомпоновкиВидСравненияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОтборКомпоновкиГруппа2" id="183">
+											<ExtendedTooltip name="ОтборКомпоновкиГруппа2РасширеннаяПодсказка" id="184"/>
+											<ChildItems>
+												<CheckBoxField name="ОтборКомпоновкиИспользование" id="146">
+													<DataPath>ОтборКомпоновки.Использование</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОтборКомпоновкиИспользованиеКонтекстноеМеню" id="147"/>
+													<ExtendedTooltip name="ОтборКомпоновкиИспользованиеРасширеннаяПодсказка" id="148"/>
+												</CheckBoxField>
+												<InputField name="ОтборКомпоновкиПравоеЗначение" id="75">
+													<DataPath>ОтборКомпоновки.ПравоеЗначение</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Значение</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОтборКомпоновкиПравоеЗначениеКонтекстноеМеню" id="76"/>
+													<ExtendedTooltip name="ОтборКомпоновкиПравоеЗначениеРасширеннаяПодсказка" id="77"/>
+													<Events>
+														<Event name="OnChange">ОтборКомпоновкиПравоеЗначениеПриИзменении</Event>
+														<Event name="StartChoice">ОтборКомпоновкиПравоеЗначениеНачалоВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -371,33 +391,49 @@
 								<Event name="BeforeAddRow">УсловноеОформлениеКомпоновкиПередНачаломДобавления</Event>
 							</Events>
 							<ChildItems>
-								<InputField name="УсловноеОформлениеКомпоновкиПоля" id="137">
-									<DataPath>УсловноеОформлениеКомпоновки.Поле</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="УсловноеОформлениеКомпоновкиПоляКонтекстноеМеню" id="138"/>
-									<ExtendedTooltip name="УсловноеОформлениеКомпоновкиПоляРасширеннаяПодсказка" id="139"/>
-								</InputField>
-								<InputField name="УсловноеОформлениеКомпоновкиПредставление" id="176">
-									<DataPath>УсловноеОформлениеКомпоновки.Представление</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="УсловноеОформлениеКомпоновкиПредставлениеКонтекстноеМеню" id="177"/>
-									<ExtendedTooltip name="УсловноеОформлениеКомпоновкиПредставлениеРасширеннаяПодсказка" id="178"/>
-								</InputField>
-								<InputField name="УсловноеОформлениеКомпоновкиЗначение" id="143">
-									<DataPath>УсловноеОформлениеКомпоновки.Значение</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="УсловноеОформлениеКомпоновкиЗначениеКонтекстноеМеню" id="144"/>
-									<ExtendedTooltip name="УсловноеОформлениеКомпоновкиЗначениеРасширеннаяПодсказка" id="145"/>
-								</InputField>
-								<CheckBoxField name="УсловноеОформлениеКомпоновкиИспользование" id="134">
-									<DataPath>УсловноеОформлениеКомпоновки.Использование</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="УсловноеОформлениеКомпоновкиИспользованиеКонтекстноеМеню" id="135"/>
-									<ExtendedTooltip name="УсловноеОформлениеКомпоновкиИспользованиеРасширеннаяПодсказка" id="136"/>
-								</CheckBoxField>
+								<ColumnGroup name="УсловноеОформлениеКомпоновкиГруппа1" id="185">
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="УсловноеОформлениеКомпоновкиГруппа1РасширеннаяПодсказка" id="186"/>
+									<ChildItems>
+										<ColumnGroup name="УсловноеОформлениеКомпоновкиГруппа2" id="187">
+											<ExtendedTooltip name="УсловноеОформлениеКомпоновкиГруппа2РасширеннаяПодсказка" id="188"/>
+											<ChildItems>
+												<InputField name="УсловноеОформлениеКомпоновкиПоля" id="137">
+													<DataPath>УсловноеОформлениеКомпоновки.Поле</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="УсловноеОформлениеКомпоновкиПоляКонтекстноеМеню" id="138"/>
+													<ExtendedTooltip name="УсловноеОформлениеКомпоновкиПоляРасширеннаяПодсказка" id="139"/>
+												</InputField>
+												<InputField name="УсловноеОформлениеКомпоновкиПредставление" id="176">
+													<DataPath>УсловноеОформлениеКомпоновки.Представление</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="УсловноеОформлениеКомпоновкиПредставлениеКонтекстноеМеню" id="177"/>
+													<ExtendedTooltip name="УсловноеОформлениеКомпоновкиПредставлениеРасширеннаяПодсказка" id="178"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="УсловноеОформлениеКомпоновкиГруппа3" id="189">
+											<ExtendedTooltip name="УсловноеОформлениеКомпоновкиГруппа3РасширеннаяПодсказка" id="190"/>
+											<ChildItems>
+												<CheckBoxField name="УсловноеОформлениеКомпоновкиИспользование" id="134">
+													<DataPath>УсловноеОформлениеКомпоновки.Использование</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="УсловноеОформлениеКомпоновкиИспользованиеКонтекстноеМеню" id="135"/>
+													<ExtendedTooltip name="УсловноеОформлениеКомпоновкиИспользованиеРасширеннаяПодсказка" id="136"/>
+												</CheckBoxField>
+												<InputField name="УсловноеОформлениеКомпоновкиЗначение" id="143">
+													<DataPath>УсловноеОформлениеКомпоновки.Значение</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="УсловноеОформлениеКомпоновкиЗначениеКонтекстноеМеню" id="144"/>
+													<ExtendedTooltip name="УсловноеОформлениеКомпоновкиЗначениеРасширеннаяПодсказка" id="145"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
 							</ChildItems>
 						</Table>
 					</ChildItems>
