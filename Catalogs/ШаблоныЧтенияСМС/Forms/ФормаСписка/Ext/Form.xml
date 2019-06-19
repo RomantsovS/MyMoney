@@ -47,6 +47,12 @@
 			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
 			<ContextMenu name="СписокКонтекстноеМеню" id="4">
 				<ChildItems>
+					<Button name="СписокКонтекстноеМенюСправочникШаблоныЧтенияСМСПроверитьШаблон" id="24">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.ШаблоныЧтенияСМС.Command.ПроверитьШаблон</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<ExtendedTooltip name="СписокКонтекстноеМенюСправочникШаблоныЧтенияСМСПроверитьШаблонРасширеннаяПодсказка" id="25"/>
+					</Button>
 					<Button name="ФормаОбщаяКомандаУдалениеЭлементаСПроверкой" id="19">
 						<Type>CommandBarButton</Type>
 						<CommandName>CommonCommand.УдалениеЭлементаСПроверкой</CommandName>

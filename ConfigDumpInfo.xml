@@ -122,10 +122,11 @@
 		<Metadata name="Catalog.ФизЛица.Form.ФормаСписка.Form" id="93a2dde1-318c-4682-8c26-a40a5da5ff38.0" configVersion="957289f59c21dd439848ad50223b44bf00000000"/>
 		<Metadata name="Catalog.ФизЛица.Form.ФормаЭлемента" id="d0e06301-d072-4c53-9d03-c3495c56cec1" configVersion="ec01ab68128f074e8faa12e78efa2fbf00000000"/>
 		<Metadata name="Catalog.ФизЛица.Form.ФормаЭлемента.Form" id="d0e06301-d072-4c53-9d03-c3495c56cec1.0" configVersion="04af532362951f418bb3359de01c8b8800000000"/>
-		<Metadata name="Catalog.ШаблоныЧтенияСМС" id="32dcef79-9cfe-4df3-8eec-f7a52f2e740c" configVersion="a42e6e5ac06e2245ab84b1a620a7037000000000">
+		<Metadata name="Catalog.ШаблоныЧтенияСМС" id="32dcef79-9cfe-4df3-8eec-f7a52f2e740c" configVersion="0dacd89bca112f46afb757083ee2a47f00000000">
 			<Metadata name="Catalog.ШаблоныЧтенияСМС.Attribute.ШаблонКомментарий" id="0f4a78c7-d1c9-4068-92fc-4da487831b0b"/>
 			<Metadata name="Catalog.ШаблоныЧтенияСМС.Attribute.Использовать" id="32fb72b1-5071-4529-930c-5c4315f72ced"/>
 			<Metadata name="Catalog.ШаблоныЧтенияСМС.Attribute.ТипОперации" id="44d77edf-b866-4a8b-aa3b-2a1a4609119c"/>
+			<Metadata name="Catalog.ШаблоныЧтенияСМС.Command.ПроверитьШаблон" id="63cf73d5-8d8a-4e47-8b60-2a0d1c9dba7d"/>
 			<Metadata name="Catalog.ШаблоныЧтенияСМС.Attribute.ШаблонКарта" id="85ded8cc-2244-44d5-9e48-0f4961650391"/>
 			<Metadata name="Catalog.ШаблоныЧтенияСМС.Attribute.ШаблонСумма" id="9264ae73-997c-4862-93ba-7f4980811e19"/>
 			<Metadata name="Catalog.ШаблоныЧтенияСМС.Attribute.Кошелек" id="a94196c7-9f12-4b82-9271-0c84c4e65487"/>
@@ -133,8 +134,9 @@
 			<Metadata name="Catalog.ШаблоныЧтенияСМС.Attribute.ШаблонТипОперации" id="c3b6f078-b027-43ea-b6fd-ba16867ed6b3"/>
 			<Metadata name="Catalog.ШаблоныЧтенияСМС.Attribute.Порядок" id="d5afbaa3-95de-459d-aee8-bd6d8c3f2338"/>
 		</Metadata>
-		<Metadata name="Catalog.ШаблоныЧтенияСМС.Form.ФормаСписка" id="8d9670f8-f0ed-478d-be7b-345933b99229" configVersion="9b175d4119bca1448c3a678e719ddfc500000000"/>
-		<Metadata name="Catalog.ШаблоныЧтенияСМС.Form.ФормаСписка.Form" id="8d9670f8-f0ed-478d-be7b-345933b99229.0" configVersion="4d7260ac86b50f4b825ebefa4774315a00000000"/>
+		<Metadata name="Catalog.ШаблоныЧтенияСМС.Command.ПроверитьШаблон.CommandModule" id="63cf73d5-8d8a-4e47-8b60-2a0d1c9dba7d.2" configVersion="991982ae5e020c42a8223c6c244bcf2f00000000"/>
+		<Metadata name="Catalog.ШаблоныЧтенияСМС.Form.ФормаСписка" id="8d9670f8-f0ed-478d-be7b-345933b99229" configVersion="ff2162070b821448b0488d4f7bdb0dd100000000"/>
+		<Metadata name="Catalog.ШаблоныЧтенияСМС.Form.ФормаСписка.Form" id="8d9670f8-f0ed-478d-be7b-345933b99229.0" configVersion="db121471f8fdcb4585b4f53d2875bbde00000000"/>
 		<Metadata name="Catalog.ШаблоныЧтенияСМС.Form.ФормаЭлемента" id="a8cef64e-832d-4a35-9e95-17f8effc62a2" configVersion="1a2201749020544cac66012dd976a4fe00000000"/>
 		<Metadata name="Catalog.ШаблоныЧтенияСМС.Form.ФормаЭлемента.Form" id="a8cef64e-832d-4a35-9e95-17f8effc62a2.0" configVersion="2dcf189fdc2c384c80cf9565f0961b6b00000000"/>
 		<Metadata name="CommonCommand.Обмен" id="cc945b8b-bf90-4a7f-a58d-f208635ba03c" configVersion="bbafaa9681a77c4c9554338572d1403c00000000"/>
@@ -162,8 +164,8 @@
 		<Metadata name="CommonForm.ФормаПроверкиПароля" id="4e91b3f7-70f2-49e4-beda-fb527e963c77" configVersion="6321ac4b4eb2df4bb6d881ffe995405f00000000"/>
 		<Metadata name="CommonForm.ФормаПроверкиПароля.Form" id="4e91b3f7-70f2-49e4-beda-fb527e963c77.0" configVersion="586ba1be2549274f911c32a52553d82300000000"/>
 		<Metadata name="CommonForm.ФормаПроверкиПароля.Help" id="4e91b3f7-70f2-49e4-beda-fb527e963c77.1" configVersion="39253e45392ae348bf4e09e0d169271400000000"/>
-		<Metadata name="CommonForm.ФормаСозданияОперацийИзСМС" id="e72db3c9-adad-44e8-ad09-9ce5c9f55092" configVersion="69e405215555ce438c5634b99e702b5700000000"/>
-		<Metadata name="CommonForm.ФормаСозданияОперацийИзСМС.Form" id="e72db3c9-adad-44e8-ad09-9ce5c9f55092.0" configVersion="6c1df0c00feef4499da992f80a87684100000000"/>
+		<Metadata name="CommonForm.ФормаСозданияОперацийИзСМС" id="e72db3c9-adad-44e8-ad09-9ce5c9f55092" configVersion="61e57223154e2649ab839835c88ea0e600000000"/>
+		<Metadata name="CommonForm.ФормаСозданияОперацийИзСМС.Form" id="e72db3c9-adad-44e8-ad09-9ce5c9f55092.0" configVersion="1c59a2ac75d86d40be5a27784b0468d000000000"/>
 		<Metadata name="CommonForm.ЧтоНового" id="0cde8925-96e7-431c-8e1e-4d4baf46b7ca" configVersion="8554e0db28bf75469e348742af716d8500000000"/>
 		<Metadata name="CommonForm.ЧтоНового.Form" id="0cde8925-96e7-431c-8e1e-4d4baf46b7ca.0" configVersion="554057d4161316458e4c07354a92f16f00000000"/>
 		<Metadata name="CommonForm.ЧтоНового.Help" id="0cde8925-96e7-431c-8e1e-4d4baf46b7ca.1" configVersion="035d5ead104f32478cf8b9db7fad142600000000"/>
@@ -223,8 +225,8 @@
 		<Metadata name="CommonModule.РаботаСКурсамиВалютПовтИсп.Module" id="3c424543-1717-4e1a-8c83-5e543b2a2740.0" configVersion="3bc36d87b0a8c0468acf11506b77743800000000"/>
 		<Metadata name="CommonModule.РаботаСПочтойКлиентСервер" id="7b3ec153-c497-4312-93d7-2fb3916f6d99" configVersion="c3a4bbd307e90048b9ab6a3f75b86a3a00000000"/>
 		<Metadata name="CommonModule.РаботаСПочтойКлиентСервер.Module" id="7b3ec153-c497-4312-93d7-2fb3916f6d99.0" configVersion="532830680c22444eb0d1cd51bb8a39a200000000"/>
-		<Metadata name="CommonModule.СМССообщенияКлиент" id="41e74d77-4a34-4b97-ab82-3954a97fc7b3" configVersion="5f3512e525b9a14bab8e9e170559ec6b00000000"/>
-		<Metadata name="CommonModule.СМССообщенияКлиент.Module" id="41e74d77-4a34-4b97-ab82-3954a97fc7b3.0" configVersion="c5eb2255f0452c41bcc7cee6fcb82b1600000000"/>
+		<Metadata name="CommonModule.СМССообщенияКлиент" id="41e74d77-4a34-4b97-ab82-3954a97fc7b3" configVersion="e27f27c166a6964486b0f36ee1e6deca00000000"/>
+		<Metadata name="CommonModule.СМССообщенияКлиент.Module" id="41e74d77-4a34-4b97-ab82-3954a97fc7b3.0" configVersion="dc435c2496bc5e47abe45575c537fca700000000"/>
 		<Metadata name="CommonModule.СтандартныеПодсистемыВызовСервера" id="948453ca-e612-4310-989c-b7b1ddb26628" configVersion="a27e7c7f50d6ce45acc7c9d07739c2f900000000"/>
 		<Metadata name="CommonModule.СтандартныеПодсистемыВызовСервера.Module" id="948453ca-e612-4310-989c-b7b1ddb26628.0" configVersion="0413bb7a4a5ac94d8de7598757f4dd5b00000000"/>
 		<Metadata name="CommonModule.СтандартныеПодсистемыГлобальный" id="51f2c867-72bb-493f-8367-8a5163703cc7" configVersion="28cb676b921229479df03869fb8bbf4a00000000"/>
@@ -257,9 +259,9 @@
 		<Metadata name="CommonPicture.Расход.Picture" id="ea6e4f76-b147-4878-86bf-66afe0763e1a.0" configVersion="fa2293c169ba12478bb46c68ecaa016e00000000"/>
 		<Metadata name="CommonPicture.СМС" id="89ef2f2d-3d3a-48ab-bc30-99cd3dd37da6" configVersion="92e2f323fa952945b68d2cd67452211b00000000"/>
 		<Metadata name="CommonPicture.СМС.Picture" id="89ef2f2d-3d3a-48ab-bc30-99cd3dd37da6.0" configVersion="2f3a0da98dcb494ba43f1350aa311cd000000000"/>
-		<Metadata name="CommonTemplate.ЧтоНового" id="181e404e-6c31-46a1-aedd-11ba5fb34701" configVersion="35bed74b9e09744588e25b43ffc2db2a00000000"/>
-		<Metadata name="CommonTemplate.ЧтоНового.Template" id="181e404e-6c31-46a1-aedd-11ba5fb34701.0" configVersion="20c0bc384e24ad47894bd16f93a8e14600000000"/>
-		<Metadata name="Configuration.МоиДеньги" id="5e20945a-aefc-4780-a6ed-86eb11ff8f33" configVersion="dbc222f714fc1a4f917610f0016fcbe600000000"/>
+		<Metadata name="CommonTemplate.ЧтоНового" id="181e404e-6c31-46a1-aedd-11ba5fb34701" configVersion="26b0a77d53e1044886443355beb5c33200000000"/>
+		<Metadata name="CommonTemplate.ЧтоНового.Template" id="181e404e-6c31-46a1-aedd-11ba5fb34701.0" configVersion="be5e846563d3ff409fd9cb55cfca91b800000000"/>
+		<Metadata name="Configuration.МоиДеньги" id="5e20945a-aefc-4780-a6ed-86eb11ff8f33" configVersion="4d61d854c7b4f14ba3ad897eeddbc51500000000"/>
 		<Metadata name="Configuration.МоиДеньги.Help" id="37677439-a2ba-400f-99e7-903d066468fe.3" configVersion="8a2a83131d01ac4db563158ea1c8ef0000000000"/>
 		<Metadata name="Configuration.МоиДеньги.HomePageWorkArea" id="37677439-a2ba-400f-99e7-903d066468fe.8" configVersion="9dafcabb3c601c4f93b034f36d4e2adb00000000"/>
 		<Metadata name="Configuration.МоиДеньги.MainSectionCommandInterface" id="37677439-a2ba-400f-99e7-903d066468fe.9" configVersion="2888588af29b3245902d6e483d78e20000000000"/>
