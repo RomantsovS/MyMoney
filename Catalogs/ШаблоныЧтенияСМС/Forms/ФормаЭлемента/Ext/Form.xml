@@ -12,6 +12,7 @@
 	<Events>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<CheckBoxField name="Использовать" id="49">
@@ -75,6 +76,7 @@
 							<v8:content>Тип операции</v8:content>
 						</v8:item>
 					</Title>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
 					<ContextMenu name="СтрокаШаблонТипОперацииКонтекстноеМеню" id="56"/>
 					<ExtendedTooltip name="СтрокаШаблонТипОперацииРасширеннаяПодсказка" id="57"/>
 					<Events>
