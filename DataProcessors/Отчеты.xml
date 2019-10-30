@@ -29,7 +29,6 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ДинамикаОстатковПоКошелькам</Form>
-			<Form>ДинамикаОстатковПоКошелькамНастройки</Form>
 			<Form>НастройкаСКДВыборДоступныхПолей</Form>
 			<Form>НастройкиОтбора</Form>
 			<Form>НастройкиПорядка</Form>
@@ -49,17 +48,18 @@
 			<Template>Макет</Template>
 			<Template>МакетОстатки</Template>
 			<Template>МакетОстаткиПартииВалют</Template>
+			<Template>МакетПроверкаДолгиЗатраты</Template>
 			<Template>МакетПродажиПартииВалют</Template>
 			<Template>МакетСравнениеПериодов</Template>
-			<Template>МакетПроверкаДолгиЗатраты</Template>
+			<Template>СКДДинамикаОстатковПоКошелькам</Template>
 			<Template>СКДОстаткиПартийВалют</Template>
 			<Template>СКДОстаткиПартийВалютРасшифровка</Template>
-			<Template>СКДТекущиеОстатки</Template>
-			<Template>СКДОтчетПоРасходам</Template>
-			<Template>СКДСравнениеПериодов</Template>
-			<Template>СКДДинамикаОстатковПоКошелькам</Template>
 			<Template>СКДОтчетПоДолгам</Template>
 			<Template>СКДОтчетПоПереводам</Template>
+			<Template>СКДОтчетПоРасходам</Template>
+			<Template>СКДПроверкаДолгиЗатраты</Template>
+			<Template>СКДСравнениеПериодов</Template>
+			<Template>СКДТекущиеОстатки</Template>
 			<Command uuid="118fd94e-3d91-41b0-94e6-d9d5eb486d96">
 				<Properties>
 					<Name>НастройкиСКД</Name>

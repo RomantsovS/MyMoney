@@ -177,12 +177,16 @@
 														</v8:item>
 													</Title>
 													<EditMode>EnterOnInput</EditMode>
+													<Width>12</Width>
+													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="ОтборКомпоновкиЛевоеЗначениеКонтекстноеМеню" id="70"/>
 													<ExtendedTooltip name="ОтборКомпоновкиЛевоеЗначениеРасширеннаяПодсказка" id="71"/>
 												</InputField>
 												<InputField name="ОтборКомпоновкиВидСравнения" id="72">
 													<DataPath>ОтборКомпоновки.ВидСравнения</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<Width>12</Width>
+													<HorizontalStretch>false</HorizontalStretch>
 													<ListChoiceMode>true</ListChoiceMode>
 													<ContextMenu name="ОтборКомпоновкиВидСравненияКонтекстноеМеню" id="73"/>
 													<ExtendedTooltip name="ОтборКомпоновкиВидСравненияРасширеннаяПодсказка" id="74"/>
@@ -402,6 +406,8 @@
 													<DataPath>УсловноеОформлениеКомпоновки.Поле</DataPath>
 													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
+													<Width>12</Width>
+													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="УсловноеОформлениеКомпоновкиПоляКонтекстноеМеню" id="138"/>
 													<ExtendedTooltip name="УсловноеОформлениеКомпоновкиПоляРасширеннаяПодсказка" id="139"/>
 												</InputField>
@@ -409,6 +415,8 @@
 													<DataPath>УсловноеОформлениеКомпоновки.Представление</DataPath>
 													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
+													<Width>12</Width>
+													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="УсловноеОформлениеКомпоновкиПредставлениеКонтекстноеМеню" id="177"/>
 													<ExtendedTooltip name="УсловноеОформлениеКомпоновкиПредставлениеРасширеннаяПодсказка" id="178"/>
 												</InputField>

@@ -387,8 +387,6 @@
 									</SearchControlAddition>
 									<Events>
 										<Event name="Selection">ОператорыВыбор</Event>
-										<Event name="DragStart">ОператорыНачалоПеретаскивания</Event>
-										<Event name="DragEnd">ОператорыОкончаниеПеретаскивания</Event>
 									</Events>
 									<ChildItems>
 										<InputField name="ОператорыОператор" id="11">

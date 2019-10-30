@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor/>
-			<Version>1.12.2</Version>
+			<Version>1.13.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -140,16 +140,19 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<CommonPicture>Доход</CommonPicture>
-			<CommonPicture>Расход</CommonPicture>
-			<CommonPicture>ПиктограммаФайла_Excel</CommonPicture>
-			<CommonPicture>Готово</CommonPicture>
-			<CommonPicture>Настройки</CommonPicture>
-			<CommonPicture>КурсыВалют</CommonPicture>
 			<CommonPicture>Бекап</CommonPicture>
-			<CommonPicture>ДлительнаяОперация48</CommonPicture>
-			<CommonPicture>СМС</CommonPicture>
+			<CommonPicture>Валюты</CommonPicture>
 			<CommonPicture>ВидыОпераций</CommonPicture>
+			<CommonPicture>Готово</CommonPicture>
+			<CommonPicture>ДлительнаяОперация48</CommonPicture>
+			<CommonPicture>Доход</CommonPicture>
+			<CommonPicture>КурсыВалют</CommonPicture>
+			<CommonPicture>Метка</CommonPicture>
+			<CommonPicture>Настройки</CommonPicture>
+			<CommonPicture>Кошелек</CommonPicture>
+			<CommonPicture>ПиктограммаФайла_Excel</CommonPicture>
+			<CommonPicture>Расход</CommonPicture>
+			<CommonPicture>СМС</CommonPicture>
 			<SessionParameter>ВерсияФорматаОбмена</SessionParameter>
 			<SessionParameter>ГоризонтальнаяОриентацияЭкрана</SessionParameter>
 			<SessionParameter>ОбновлениеБД</SessionParameter>
@@ -236,12 +239,12 @@
 			<Enum>РазмерШрифта</Enum>
 			<Enum>ТипыДолгов</Enum>
 			<Enum>ТипыОпераций</Enum>
+			<DataProcessor>ГрупповоеИзменениеРеквизитов</DataProcessor>
 			<DataProcessor>ЗагрузкаКурсовВалют</DataProcessor>
 			<DataProcessor>Настройки</DataProcessor>
 			<DataProcessor>Обмены</DataProcessor>
 			<DataProcessor>Отчеты</DataProcessor>
 			<DataProcessor>Сервис</DataProcessor>
-			<DataProcessor>ГрупповоеИзменениеРеквизитов</DataProcessor>
 			<InformationRegister>КурсыВалют</InformationRegister>
 			<InformationRegister>ОбщиеНастройки</InformationRegister>
 			<AccumulationRegister>Долги</AccumulationRegister>

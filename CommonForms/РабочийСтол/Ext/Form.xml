@@ -12,8 +12,14 @@
 	<ChildItems>
 		<Button name="СправочникКошелькиОткрытьСписок" id="111">
 			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
 			<Width>35</Width>
+			<Height>1</Height>
 			<CommandName>Catalog.Кошельки.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Кошелек</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<ExtendedTooltip name="СправочникКошелькиОткрытьСписокРасширеннаяПодсказка" id="112"/>
 		</Button>
 		<UsualGroup name="ГруппаОперации" id="56">
@@ -111,14 +117,26 @@
 		</Button>
 		<Button name="СправочникВалютыОткрытьСписок" id="119">
 			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
 			<Width>35</Width>
+			<Height>1</Height>
 			<CommandName>Catalog.Валюты.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Валюты</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<ExtendedTooltip name="СправочникВалютыОткрытьСписокРасширеннаяПодсказка" id="120"/>
 		</Button>
 		<Button name="СправочникМеткиОткрытьСписок" id="109">
 			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
 			<Width>35</Width>
+			<Height>1</Height>
 			<CommandName>Catalog.Метки.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Метка</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<ExtendedTooltip name="СправочникМеткиОткрытьСписокРасширеннаяПодсказка" id="110"/>
 		</Button>
 		<Button name="ОбработкаОбменыОткрыть" id="75">

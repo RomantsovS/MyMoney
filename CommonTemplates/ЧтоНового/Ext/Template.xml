@@ -29,6 +29,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>&lt;html&gt;
 &lt;body&gt;
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.13.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Отчет "Проверка долги затраты" перенесён на механизм СКД.&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Реализована фоновая загрузка курсов валют.&lt;br&gt;
+
 &lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.12.1&lt;/b&gt;&lt;/p&gt;
 &lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлена команда проверки шаблона чтения СМС.&lt;br&gt;
 
