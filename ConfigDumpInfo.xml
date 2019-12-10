@@ -249,7 +249,7 @@
 		<Metadata name="CommonPicture.СМС.Picture" id="89ef2f2d-3d3a-48ab-bc30-99cd3dd37da6.0" configVersion="e126adf32094394f9c84b17d7237c39b00000000"/>
 		<Metadata name="CommonTemplate.ЧтоНового" id="181e404e-6c31-46a1-aedd-11ba5fb34701" configVersion="839c57fd6060134498a123f44ce0ffb900000000"/>
 		<Metadata name="CommonTemplate.ЧтоНового.Template" id="181e404e-6c31-46a1-aedd-11ba5fb34701.0" configVersion="d80fc77d6a80ad4eab0ca5745b77eef600000000"/>
-		<Metadata name="Configuration.МоиДеньги" id="5e20945a-aefc-4780-a6ed-86eb11ff8f33" configVersion="63d628c365540e4eb3390561bcb018f400000000"/>
+		<Metadata name="Configuration.МоиДеньги" id="5e20945a-aefc-4780-a6ed-86eb11ff8f33" configVersion="41eb0b9e334e9b4daf91423c8b0eabd800000000"/>
 		<Metadata name="Configuration.МоиДеньги.HomePageWorkArea" id="37677439-a2ba-400f-99e7-903d066468fe.8" configVersion="a7f0061bcc210a45bdfd4ccbcb2cd7fd00000000"/>
 		<Metadata name="Configuration.МоиДеньги.MainSectionCommandInterface" id="37677439-a2ba-400f-99e7-903d066468fe.9" configVersion="ffa1f80f90fe5b40a2774aac8c5797a500000000"/>
 		<Metadata name="Configuration.МоиДеньги.ManagedApplicationModule" id="37677439-a2ba-400f-99e7-903d066468fe.6" configVersion="dd95f3ae8b4f51429470e08631d378e700000000"/>
@@ -325,8 +325,8 @@
 		<Metadata name="DataProcessor.Отчеты.Command.ВыбратьНастройку.CommandModule" id="b7419b14-97e1-4fab-9eed-5dc2c36e6ae8.2" configVersion="022417b94c5dea459710545a41d8f63600000000"/>
 		<Metadata name="DataProcessor.Отчеты.Command.НастройкиСКД.CommandModule" id="118fd94e-3d91-41b0-94e6-d9d5eb486d96.2" configVersion="8e3cec6b1bd9b24fa3a7997891d87c1700000000"/>
 		<Metadata name="DataProcessor.Отчеты.Command.СохранитьНастройку.CommandModule" id="599f5435-56a6-4b1c-9425-3f3d5f94a093.2" configVersion="63e379d147fed94cac70a5256551b9c200000000"/>
-		<Metadata name="DataProcessor.Отчеты.Form.ДинамикаОстатковПоКошелькам" id="088ccc3b-9c28-4ee7-a415-06b9e9af8fbf" configVersion="e0dcd258964ce345ac877b83f4f4627000000000"/>
-		<Metadata name="DataProcessor.Отчеты.Form.ДинамикаОстатковПоКошелькам.Form" id="088ccc3b-9c28-4ee7-a415-06b9e9af8fbf.0" configVersion="9b9df681ddea90478e8e8489501355b900000000"/>
+		<Metadata name="DataProcessor.Отчеты.Form.ДинамикаОстатковПоКошелькам" id="088ccc3b-9c28-4ee7-a415-06b9e9af8fbf" configVersion="e9fdd270e1102c4db117aca8c137a43a00000000"/>
+		<Metadata name="DataProcessor.Отчеты.Form.ДинамикаОстатковПоКошелькам.Form" id="088ccc3b-9c28-4ee7-a415-06b9e9af8fbf.0" configVersion="1a299a2a49fd174b88821b6e916b7c0c00000000"/>
 		<Metadata name="DataProcessor.Отчеты.Form.НастройкаСКДВыборДоступныхПолей" id="540f3269-dc3f-4475-9c3b-39e536185984" configVersion="88d55ff592d5fb4fa74b19ab27d143b000000000"/>
 		<Metadata name="DataProcessor.Отчеты.Form.НастройкаСКДВыборДоступныхПолей.Form" id="540f3269-dc3f-4475-9c3b-39e536185984.0" configVersion="3debb0882d3abc4caf597324db122a2200000000"/>
 		<Metadata name="DataProcessor.Отчеты.Form.НастройкиОтбора" id="50be7567-748e-427d-9420-967841688583" configVersion="406566796685e44aacac6a76d468c32200000000"/>
@@ -337,8 +337,8 @@
 		<Metadata name="DataProcessor.Отчеты.Form.ОстаткиПартийВалют.Form" id="b6b78a58-3855-4729-855a-569b74f37e64.0" configVersion="a1ec217a41aaee42a52450e88ab0e73f00000000"/>
 		<Metadata name="DataProcessor.Отчеты.Form.ОтчетПоДолгам" id="6d381a99-34dd-4b40-8645-08633b358ba2" configVersion="39c4f1960fef134aacb13dd7dd994c8b00000000"/>
 		<Metadata name="DataProcessor.Отчеты.Form.ОтчетПоДолгам.Form" id="6d381a99-34dd-4b40-8645-08633b358ba2.0" configVersion="89dbfdce84d31e4489fe9b96398473ba00000000"/>
-		<Metadata name="DataProcessor.Отчеты.Form.ОтчетПоПереводам" id="7d8f3890-c729-4055-a36c-14a135c2db60" configVersion="a22a6b237afa8d4da3043ba201cac69700000000"/>
-		<Metadata name="DataProcessor.Отчеты.Form.ОтчетПоПереводам.Form" id="7d8f3890-c729-4055-a36c-14a135c2db60.0" configVersion="35d7cecd07a7a2479510bfaaea67514700000000"/>
+		<Metadata name="DataProcessor.Отчеты.Form.ОтчетПоПереводам" id="7d8f3890-c729-4055-a36c-14a135c2db60" configVersion="41df1ee94e9b5646b12e3ca338fcfa1800000000"/>
+		<Metadata name="DataProcessor.Отчеты.Form.ОтчетПоПереводам.Form" id="7d8f3890-c729-4055-a36c-14a135c2db60.0" configVersion="d26c312c1e4bc44e92a2d42c04d4cfb600000000"/>
 		<Metadata name="DataProcessor.Отчеты.Form.ОтчетПоРасходам" id="7a0ac12e-d717-4d80-830b-1b58eae30eae" configVersion="b59f311bc928a9429cff3d8a8b273a5000000000"/>
 		<Metadata name="DataProcessor.Отчеты.Form.ОтчетПоРасходам.Form" id="7a0ac12e-d717-4d80-830b-1b58eae30eae.0" configVersion="a20198aff396f64a8c58565b1267ce9d00000000"/>
 		<Metadata name="DataProcessor.Отчеты.Form.ПроверкаДолгиЗатраты" id="87ff12a2-cf5f-4c84-ae39-b371bebb6ae8" configVersion="a9cc3584435ce54a9a1dece56897b3de00000000"/>
