@@ -247,9 +247,9 @@
 		<Metadata name="CommonPicture.Расход.Picture" id="ea6e4f76-b147-4878-86bf-66afe0763e1a.0" configVersion="e8a63390aba7064a84975fec9eb02f5c00000000"/>
 		<Metadata name="CommonPicture.СМС" id="89ef2f2d-3d3a-48ab-bc30-99cd3dd37da6" configVersion="9091083442879243bb49a884619e012000000000"/>
 		<Metadata name="CommonPicture.СМС.Picture" id="89ef2f2d-3d3a-48ab-bc30-99cd3dd37da6.0" configVersion="e126adf32094394f9c84b17d7237c39b00000000"/>
-		<Metadata name="CommonTemplate.ЧтоНового" id="181e404e-6c31-46a1-aedd-11ba5fb34701" configVersion="839c57fd6060134498a123f44ce0ffb900000000"/>
-		<Metadata name="CommonTemplate.ЧтоНового.Template" id="181e404e-6c31-46a1-aedd-11ba5fb34701.0" configVersion="d80fc77d6a80ad4eab0ca5745b77eef600000000"/>
-		<Metadata name="Configuration.МоиДеньги" id="5e20945a-aefc-4780-a6ed-86eb11ff8f33" configVersion="41eb0b9e334e9b4daf91423c8b0eabd800000000"/>
+		<Metadata name="CommonTemplate.ЧтоНового" id="181e404e-6c31-46a1-aedd-11ba5fb34701" configVersion="2dea91b53b92c84da3021ea4f100e45b00000000"/>
+		<Metadata name="CommonTemplate.ЧтоНового.Template" id="181e404e-6c31-46a1-aedd-11ba5fb34701.0" configVersion="341465d4da698e4081aacc42c6b218a800000000"/>
+		<Metadata name="Configuration.МоиДеньги" id="5e20945a-aefc-4780-a6ed-86eb11ff8f33" configVersion="0a0cc809cd61264f803525478056e4b700000000"/>
 		<Metadata name="Configuration.МоиДеньги.HomePageWorkArea" id="37677439-a2ba-400f-99e7-903d066468fe.8" configVersion="a7f0061bcc210a45bdfd4ccbcb2cd7fd00000000"/>
 		<Metadata name="Configuration.МоиДеньги.MainSectionCommandInterface" id="37677439-a2ba-400f-99e7-903d066468fe.9" configVersion="ffa1f80f90fe5b40a2774aac8c5797a500000000"/>
 		<Metadata name="Configuration.МоиДеньги.ManagedApplicationModule" id="37677439-a2ba-400f-99e7-903d066468fe.6" configVersion="dd95f3ae8b4f51429470e08631d378e700000000"/>
@@ -403,7 +403,7 @@
 		<Metadata name="Document.ВводОстатков.Form.ФормаСписка" id="3bdf9f43-c0e2-4744-9cd4-6a33c55c87d9" configVersion="f9ba19febd37d34bb9cd6268498e666c00000000"/>
 		<Metadata name="Document.ВводОстатков.Form.ФормаСписка.Form" id="3bdf9f43-c0e2-4744-9cd4-6a33c55c87d9.0" configVersion="63143507eed34343862be2befc4aa49e00000000"/>
 		<Metadata name="Document.ВводОстатков.ObjectModule" id="69f91640-85b2-4096-a88c-be61705b5fca.0" configVersion="5108f3c52068c146b5c6a586ba60290d00000000"/>
-		<Metadata name="Document.Операция" id="6dc0b8f1-b4cf-4c9b-8813-6f504331b67c" configVersion="3c9186003625ed4190e587b422edd28000000000">
+		<Metadata name="Document.Операция" id="6dc0b8f1-b4cf-4c9b-8813-6f504331b67c" configVersion="592e7e9afa842a408f40b760d55123ce00000000">
 			<Metadata name="Document.Операция.Attribute.КурсПрямой" id="1e8565bd-42db-4c35-bbfa-9fd005a3b7d1"/>
 			<Metadata name="Document.Операция.Attribute.ОбщиеЗатраты" id="37f46fe6-e715-4b17-a840-f0f617160ebe"/>
 			<Metadata name="Document.Операция.Attribute.НеУчитыватьРасхождениеДолговЗатрат" id="39651875-0de3-4bb3-a6bd-2e918cfc0ab3"/>
@@ -426,12 +426,12 @@
 		</Metadata>
 		<Metadata name="Document.Операция.Form.ФормаВыбора" id="61824280-7ba6-4550-91d2-f7ad95c5857a" configVersion="7ba5bbf67aceba459d0ce41cf73b733d00000000"/>
 		<Metadata name="Document.Операция.Form.ФормаВыбора.Form" id="61824280-7ba6-4550-91d2-f7ad95c5857a.0" configVersion="470cac750024184c82bcf73a3fcd612800000000"/>
-		<Metadata name="Document.Операция.Form.ФормаДокумента" id="eb6ae231-e972-4857-8749-522a0f3b3717" configVersion="a7cd30bd44e1bf4688cec44d7a81d29500000000"/>
-		<Metadata name="Document.Операция.Form.ФормаДокумента.Form" id="eb6ae231-e972-4857-8749-522a0f3b3717.0" configVersion="aba4bb402cad174c9b69104a2dd0692300000000"/>
-		<Metadata name="Document.Операция.Form.ФормаСписка" id="f7ea5476-3b34-4c72-b4ac-f99147cf3ccd" configVersion="c0e32de3ed76a14c854157bb51639f6d00000000"/>
-		<Metadata name="Document.Операция.Form.ФормаСписка.Form" id="f7ea5476-3b34-4c72-b4ac-f99147cf3ccd.0" configVersion="2f2adfec6c6e1d4badf87603d3a6c27000000000"/>
+		<Metadata name="Document.Операция.Form.ФормаДокумента" id="eb6ae231-e972-4857-8749-522a0f3b3717" configVersion="33a691c72b66374c9c080e737eb42d5a00000000"/>
+		<Metadata name="Document.Операция.Form.ФормаДокумента.Form" id="eb6ae231-e972-4857-8749-522a0f3b3717.0" configVersion="a35275e8477f8f4b802dfab020631fb400000000"/>
+		<Metadata name="Document.Операция.Form.ФормаСписка" id="f7ea5476-3b34-4c72-b4ac-f99147cf3ccd" configVersion="148ba2c415678143ab365ce683541ae900000000"/>
+		<Metadata name="Document.Операция.Form.ФормаСписка.Form" id="f7ea5476-3b34-4c72-b4ac-f99147cf3ccd.0" configVersion="2db25592ab8d7448bcc2d6025805f92700000000"/>
 		<Metadata name="Document.Операция.ManagerModule" id="6dc0b8f1-b4cf-4c9b-8813-6f504331b67c.2" configVersion="29a840d67bc9b344b1e189e8e28725ca00000000"/>
-		<Metadata name="Document.Операция.ObjectModule" id="6dc0b8f1-b4cf-4c9b-8813-6f504331b67c.0" configVersion="d2457f6ba010654184fdcb823c8293e600000000"/>
+		<Metadata name="Document.Операция.ObjectModule" id="6dc0b8f1-b4cf-4c9b-8813-6f504331b67c.0" configVersion="ec4fa7a850923a4ca56368d65e0e736400000000"/>
 		<Metadata name="Enum.Периодичность" id="37653331-8ead-4042-8df0-4cf518e19280" configVersion="12dcc9cb0c06744ba3c2f0ea0db7412c00000000">
 			<Metadata name="Enum.Периодичность.EnumValue.Квартал" id="0e9f888b-531e-4cae-8c0f-d0984f70a5e3"/>
 			<Metadata name="Enum.Периодичность.EnumValue.Регистратор" id="389f6f22-a6c5-42d1-a873-d8617a76879c"/>

@@ -78,6 +78,9 @@
 			<DataPath>Объект.Основание</DataPath>
 			<ContextMenu name="ОснованиеКонтекстноеМеню" id="133"/>
 			<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="134"/>
+			<Events>
+				<Event name="OnChange">ОснованиеПриИзменении</Event>
+			</Events>
 		</InputField>
 		<InputField name="Кошелек" id="10">
 			<DataPath>Объект.Кошелек</DataPath>
@@ -163,6 +166,9 @@
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="СуммаОбщиеЗатратыКонтекстноеМеню" id="122"/>
 							<ExtendedTooltip name="СуммаОбщиеЗатратыРасширеннаяПодсказка" id="123"/>
+							<Events>
+								<Event name="OnChange">СуммаОбщиеЗатратыПриИзменении</Event>
+							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
