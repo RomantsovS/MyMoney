@@ -751,11 +751,11 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="МасОтборТекУровень" id="24">
+		<Attribute name="МассивОтборТекУровень" id="24">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Мас отбор тек уровень</v8:content>
+					<v8:content>Массив отбор тек уровень</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

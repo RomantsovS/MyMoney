@@ -22,37 +22,34 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 	</Events>
 	<ChildItems>
-		<CheckBoxField name="ИспользоватьБекапНаПочту" id="13">
-			<DataPath>НаборКонстант.ИспользоватьБекапНаПочту</DataPath>
+		<CheckBoxField name="ИспользоватьРезервноеКопированиеНаПочту" id="34">
+			<DataPath>НаборКонстант.ИспользоватьРезервноеКопированиеНаПочту</DataPath>
 			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ИспользоватьБекапНаПочтуКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ИспользоватьБекапНаПочтуРасширеннаяПодсказка" id="15"/>
+			<ContextMenu name="ИспользоватьРезервноеКопированиеНаПочтуКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ИспользоватьРезервноеКопированиеНаПочтуРасширеннаяПодсказка" id="36"/>
 			<Events>
-				<Event name="OnChange">ИспользоватьБекапНаПочтуПриИзменении</Event>
+				<Event name="OnChange">ИспользоватьРезервноеКопированиеНаПочтуПриИзменении</Event>
 			</Events>
 		</CheckBoxField>
-		<InputField name="ДатаПоследнегоБекапа" id="1">
-			<DataPath>НаборКонстант.ДатаПоследнегоБекапа</DataPath>
-			<ContextMenu name="ДатаПоследнегоБекапаКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ДатаПоследнегоБекапаРасширеннаяПодсказка" id="3"/>
+		<InputField name="ДатаПоследнегоРезервногоКопирования" id="37">
+			<DataPath>НаборКонстант.ДатаПоследнегоРезервногоКопирования</DataPath>
+			<ContextMenu name="ДатаПоследнегоРезервногоКопированияКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ДатаПоследнегоРезервногоКопированияРасширеннаяПодсказка" id="39"/>
 		</InputField>
-		<InputField name="ПериодичностьБекапа" id="4">
-			<DataPath>НаборКонстант.ПериодичностьБекапа</DataPath>
-			<ContextMenu name="ПериодичностьБекапаКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ПериодичностьБекапаРасширеннаяПодсказка" id="6"/>
+		<InputField name="ПериодичностьРезервногоКопирования" id="40">
+			<DataPath>НаборКонстант.ПериодичностьРезервногоКопирования</DataPath>
+			<ContextMenu name="ПериодичностьРезервногоКопированияКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ПериодичностьРезервногоКопированияРасширеннаяПодсказка" id="42"/>
 		</InputField>
-		<InputField name="АдресПочтыБекапа" id="7">
-			<DataPath>НаборКонстант.АдресПочтыБекапа</DataPath>
-			<AutoMarkIncomplete>true</AutoMarkIncomplete>
-			<ContextMenu name="АдресПочтыБекапаКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="АдресПочтыБекапаРасширеннаяПодсказка" id="9"/>
+		<InputField name="АдресПочтыРезервногоКопирования" id="43">
+			<DataPath>НаборКонстант.АдресПочтыРезервногоКопирования</DataPath>
+			<ContextMenu name="АдресПочтыРезервногоКопированияКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="АдресПочтыРезервногоКопированияРасширеннаяПодсказка" id="45"/>
 		</InputField>
-		<InputField name="ПарольПочтыБекапа" id="10">
-			<DataPath>НаборКонстант.ПарольПочтыБекапа</DataPath>
-			<PasswordMode>true</PasswordMode>
-			<AutoMarkIncomplete>true</AutoMarkIncomplete>
-			<ContextMenu name="ПарольПочтыБекапаКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ПарольПочтыБекапаРасширеннаяПодсказка" id="12"/>
+		<InputField name="ПарольПочтыРезервногоКопирования" id="46">
+			<DataPath>НаборКонстант.ПарольПочтыРезервногоКопирования</DataPath>
+			<ContextMenu name="ПарольПочтыРезервногоКопированияКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ПарольПочтыРезервногоКопированияРасширеннаяПодсказка" id="48"/>
 		</InputField>
 		<LabelDecoration name="Декорация4" id="31">
 			<HorizontalStretch>true</HorizontalStretch>

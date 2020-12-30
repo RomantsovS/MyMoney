@@ -36,7 +36,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="ExchangePlan.Мобильные.StandardCommand.OpenList">
+		<Command name="0:04001272-f2b8-4b3c-9aa6-8c69597baa40">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -91,7 +91,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Constant.АдресПочтыБекапа.StandardCommand.Open">
+		<Command name="Constant.АдресПочтыРезервногоКопирования.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -111,7 +111,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Constant.ДатаПоследнегоБекапа.StandardCommand.Open">
+		<Command name="Constant.ДатаПоследнегоРезервногоКопирования.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -121,7 +121,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Constant.ИспользоватьБекапНаПочту.StandardCommand.Open">
+		<Command name="Constant.ИспользоватьРезервноеКопированиеНаПочту.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -151,7 +151,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="CommonCommand.Обмен">
+		<Command name="0:cc945b8b-bf90-4a7f-a58d-f208635ba03c">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -176,12 +176,12 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Constant.ПарольПочтыБекапа.StandardCommand.Open">
+		<Command name="Constant.ПарольПочтыРезервногоКопирования.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Constant.ПериодичностьБекапа.StandardCommand.Open">
+		<Command name="Constant.ПериодичностьРезервногоКопирования.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -297,7 +297,7 @@
 		<Command name="Catalog.Статьи.StandardCommand.CreateFolder">
 			<CommandGroup>ActionsPanelCreate</CommandGroup>
 		</Command>
-		<Command name="ExchangePlan.Мобильные.StandardCommand.Create">
+		<Command name="1:04001272-f2b8-4b3c-9aa6-8c69597baa40">
 			<CommandGroup>ActionsPanelCreate</CommandGroup>
 		</Command>
 		<Command name="Catalog.ШаблоныЧтенияСМС.StandardCommand.Create">

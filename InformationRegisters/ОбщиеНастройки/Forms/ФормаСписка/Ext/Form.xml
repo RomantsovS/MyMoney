@@ -95,12 +95,6 @@
 					<ContextMenu name="КлючНастроекКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КлючНастроекРасширеннаяПодсказка" id="21"/>
 				</LabelField>
-				<LabelField name="Представление" id="22">
-					<DataPath>~Список.Представление</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="ПредставлениеКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ПредставлениеРасширеннаяПодсказка" id="24"/>
-				</LabelField>
 				<CheckBoxField name="КлючНастроекОсновная" id="25">
 					<DataPath>Список.КлючНастроек.Основная</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>

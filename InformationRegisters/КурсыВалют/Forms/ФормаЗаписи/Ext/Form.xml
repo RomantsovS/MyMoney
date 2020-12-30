@@ -91,15 +91,15 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<LabelDecoration name="НадписьКраность" id="23">
+		<LabelDecoration name="НадписьКратность" id="23">
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>За</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="НадписьКраностьКонтекстноеМеню" id="24"/>
-			<ExtendedTooltip name="НадписьКраностьРасширеннаяПодсказка" id="25"/>
+			<ContextMenu name="НадписьКратностьКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="НадписьКратностьРасширеннаяПодсказка" id="25"/>
 		</LabelDecoration>
 		<UsualGroup name="ГруппаКратностьВалюта" id="18">
 			<Title>

@@ -3,7 +3,7 @@
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
-	<AutoCommandBar name="" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<InputField name="Дата" id="1">
 			<DataPath>Объект.Date</DataPath>
@@ -14,6 +14,7 @@
 		<InputField name="Кошелек" id="4">
 			<DataPath>Объект.Кошелек</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
 			<ContextMenu name="КошелекКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="КошелекРасширеннаяПодсказка" id="6"/>
 		</InputField>
@@ -22,6 +23,13 @@
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="СуммаКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Комментарий" id="10">
+			<DataPath>Объект.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="12"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>

@@ -233,6 +233,14 @@
 						</ColumnGroup>
 					</ChildItems>
 				</ColumnGroup>
+				<LabelField name="Ссылка" id="87">
+					<DataPath>Список.Ссылка</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="89"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>

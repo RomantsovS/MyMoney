@@ -49,7 +49,7 @@
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
-			<presentationExpression>валюта.краткоенаименование + " " + строка(курсПокупки) + "&gt;" + строка(курс) + " " + формат(ПартияДата, "ДФ=ддМММгг") </presentationExpression>
+			<presentationExpression>Валюта.КраткоеНаименование + " " + Строка(КурсПокупки) + "&gt;" + Строка(Курс) + " " + Формат(ПартияДата, "ДФ=ддМММгг") </presentationExpression>
 			<appearance>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>

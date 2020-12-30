@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
-	<Constant uuid="50db46f9-ad42-46ce-ae7f-63e2e75c6942">
+	<Constant uuid="11b4f2e1-14c6-450a-b268-77011395de19">
 		<InternalInfo>
-			<xr:GeneratedType name="ConstantManager.ПарольПочтыБекапа" category="Manager">
-				<xr:TypeId>a36d2bb1-0393-41d6-b061-50200a9a0eaf</xr:TypeId>
-				<xr:ValueId>5815c3b4-df63-4487-9517-eaa764360d11</xr:ValueId>
+			<xr:GeneratedType name="ConstantManager.АдресПочтыРезервногоКопирования" category="Manager">
+				<xr:TypeId>4187408e-930d-4658-9543-9ed47f06f5be</xr:TypeId>
+				<xr:ValueId>c3ac57e7-a7bc-4b54-b4ca-b786eee8d028</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ConstantValueManager.ПарольПочтыБекапа" category="ValueManager">
-				<xr:TypeId>60b20ed2-0ff9-4a5b-8819-2d4350de57e9</xr:TypeId>
-				<xr:ValueId>f4b9fa90-7fc1-439b-93f4-2839b263365f</xr:ValueId>
+			<xr:GeneratedType name="ConstantValueManager.АдресПочтыРезервногоКопирования" category="ValueManager">
+				<xr:TypeId>27b38bcc-d26c-4262-92c1-fc05fe90fc32</xr:TypeId>
+				<xr:ValueId>90563e95-4465-4e80-98c4-1bc19dea0d51</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПарольПочтыБекапа</Name>
+			<Name>АдресПочтыРезервногоКопирования</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пароль почты бекапа</v8:content>
+					<v8:content>Адрес почты резервного копирования</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

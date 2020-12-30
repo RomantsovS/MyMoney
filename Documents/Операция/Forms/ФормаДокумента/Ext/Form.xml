@@ -135,12 +135,6 @@
 					<v8:content>Группа общие затраты</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа общие затраты</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОбщиеЗатратыРасширеннаяПодсказка" id="120"/>
@@ -198,12 +192,6 @@
 					<v8:content>Группа перевод</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа перевод</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -216,12 +204,6 @@
 							<v8:content>Группа курс</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа курс</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
@@ -248,7 +230,7 @@
 						</Button>
 					</ChildItems>
 				</UsualGroup>
-				<InputField name="КошелекПриёмник" id="13">
+				<InputField name="КошелекПриемник" id="13">
 					<DataPath>Объект.КошелекПриемник</DataPath>
 					<Title>
 						<v8:item>
@@ -256,8 +238,8 @@
 							<v8:content>На кошелёк</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="КошелекПриёмникКонтекстноеМеню" id="14"/>
-					<ExtendedTooltip name="КошелекПриёмникРасширеннаяПодсказка" id="15"/>
+					<ContextMenu name="КошелекПриемникКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="КошелекПриемникРасширеннаяПодсказка" id="15"/>
 					<Events>
 						<Event name="OnChange">КошелекПриёмникПриИзменении</Event>
 					</Events>
@@ -296,12 +278,6 @@
 					<v8:content>Группа долги</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа долги</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -331,12 +307,6 @@
 					<v8:content>Группа метка</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа метка</v8:content>
-				</v8:item>
-			</ToolTip>
 			<ShowTitle>false</ShowTitle>
 			<ThroughAlign>Use</ThroughAlign>
 			<ExtendedTooltip name="ГруппаМеткаРасширеннаяПодсказка" id="166"/>
@@ -376,12 +346,6 @@
 					<v8:content>Группа ОК</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа ОК</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>

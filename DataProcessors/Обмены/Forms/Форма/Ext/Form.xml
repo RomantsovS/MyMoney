@@ -42,19 +42,19 @@
 							<ContextMenu name="Декорация2КонтекстноеМеню" id="73"/>
 							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="74"/>
 						</LabelDecoration>
-						<Button name="ВыгрузитьБекапНаПочту" id="15">
+						<Button name="ВыгрузитьРезервнуюКопиюНаПочту" id="75">
 							<Type>UsualButton</Type>
 							<Height>2</Height>
 							<HorizontalStretch>true</HorizontalStretch>
-							<CommandName>Form.Command.ВыгрузитьБекапНаПочту</CommandName>
-							<ExtendedTooltip name="ВыгрузитьБекапНаПочтуРасширеннаяПодсказка" id="16"/>
+							<CommandName>Form.Command.ВыгрузитьРезервнуюКопиюНаПочту</CommandName>
+							<ExtendedTooltip name="ВыгрузитьРезервнуюКопиюНаПочтуРасширеннаяПодсказка" id="76"/>
 						</Button>
-						<Button name="ЗагрузитьБекпапПочты2" id="63">
+						<Button name="ЗагрузитьРезервнуюКопиюПочты" id="77">
 							<Type>UsualButton</Type>
 							<Height>2</Height>
 							<HorizontalStretch>true</HorizontalStretch>
-							<CommandName>Form.Command.ЗагрузитьБекапПочты2</CommandName>
-							<ExtendedTooltip name="ЗагрузитьБекпапПочты2РасширеннаяПодсказка" id="64"/>
+							<CommandName>Form.Command.ЗагрузитьРезервнуюКопиюПочты</CommandName>
+							<ExtendedTooltip name="ЗагрузитьРезервнуюКопиюПочтыРасширеннаяПодсказка" id="78"/>
 						</Button>
 						<LabelDecoration name="Декорация1" id="69">
 							<HorizontalStretch>true</HorizontalStretch>
@@ -79,152 +79,6 @@
 								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</Picture>
 							<ExtendedTooltip name="УдалитьВсеДанныеРасширеннаяПодсказка" id="6"/>
-						</Button>
-					</ChildItems>
-				</Page>
-				<Page name="СтраницаОбменПоПлану" id="23">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Обмен по плану</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница обмен по плану</v8:content>
-						</v8:item>
-					</ToolTip>
-					<ExtendedTooltip name="СтраницаОбменПоПлануРасширеннаяПодсказка" id="24"/>
-					<ChildItems>
-						<InputField name="УзелОбмена" id="54">
-							<DataPath>УзелОбмена</DataPath>
-							<ContextMenu name="УзелОбменаКонтекстноеМеню" id="55"/>
-							<ExtendedTooltip name="УзелОбменаРасширеннаяПодсказка" id="56"/>
-							<Events>
-								<Event name="OnChange">УзелОбменаПриИзменении</Event>
-							</Events>
-						</InputField>
-						<Table name="ДеревоОбъектов" id="27">
-							<Representation>Tree</Representation>
-							<CommandBarLocation>None</CommandBarLocation>
-							<ReadOnly>true</ReadOnly>
-							<ChangeRowSet>false</ChangeRowSet>
-							<ChangeRowOrder>false</ChangeRowOrder>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>ДеревоОбъектов</DataPath>
-							<ContextMenu name="ДеревоОбъектовКонтекстноеМеню" id="28">
-								<ChildItems>
-									<Button name="ДеревоОбъектовКонтекстноеМенюУдалитьРегистрацию" id="52">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.УдалитьРегистрацию</CommandName>
-										<ExtendedTooltip name="ДеревоОбъектовКонтекстноеМенюУдалитьРегистрациюРасширеннаяПодсказка" id="53"/>
-									</Button>
-									<Button name="ДеревоОбъектовКонтекстноеМенюМаксСообщениеРегистрации" id="57">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.МаксСообщениеРегистрации</CommandName>
-										<ExtendedTooltip name="ДеревоОбъектовКонтекстноеМенюМаксСообщениеРегистрацииРасширеннаяПодсказка" id="58"/>
-									</Button>
-								</ChildItems>
-							</ContextMenu>
-							<AutoCommandBar name="ДеревоОбъектовКоманднаяПанель" id="29"/>
-							<ExtendedTooltip name="ДеревоОбъектовРасширеннаяПодсказка" id="30"/>
-							<SearchStringAddition name="ДеревоОбъектовСтрокаПоиска" id="31">
-								<AdditionSource>
-									<Item>ДеревоОбъектов</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ДеревоОбъектовСтрокаПоискаКонтекстноеМеню" id="32"/>
-								<ExtendedTooltip name="ДеревоОбъектовСтрокаПоискаРасширеннаяПодсказка" id="33"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ДеревоОбъектовСостояниеПросмотра" id="34">
-								<AdditionSource>
-									<Item>ДеревоОбъектов</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ДеревоОбъектовСостояниеПросмотраКонтекстноеМеню" id="35"/>
-								<ExtendedTooltip name="ДеревоОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="36"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ДеревоОбъектовУправлениеПоиском" id="37">
-								<AdditionSource>
-									<Item>ДеревоОбъектов</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ДеревоОбъектовУправлениеПоискомКонтекстноеМеню" id="38"/>
-								<ExtendedTooltip name="ДеревоОбъектовУправлениеПоискомРасширеннаяПодсказка" id="39"/>
-							</SearchControlAddition>
-							<ChildItems>
-								<InputField name="ДеревоОбъектовНаименование" id="40">
-									<DataPath>ДеревоОбъектов.Наименование</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Наим.</v8:content>
-										</v8:item>
-									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДеревоОбъектовНаименованиеКонтекстноеМеню" id="41"/>
-									<ExtendedTooltip name="ДеревоОбъектовНаименованиеРасширеннаяПодсказка" id="42"/>
-								</InputField>
-								<InputField name="ДеревоОбъектовКоличество" id="43">
-									<DataPath>ДеревоОбъектов.КоличествоСтрокой</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДеревоОбъектовКоличествоКонтекстноеМеню" id="44"/>
-									<ExtendedTooltip name="ДеревоОбъектовКоличествоРасширеннаяПодсказка" id="45"/>
-								</InputField>
-							</ChildItems>
-						</Table>
-						<Button name="ВыгрузитьДанные" id="7">
-							<Type>UsualButton</Type>
-							<Width>40</Width>
-							<Height>1</Height>
-							<CommandName>Form.Command.ВыгрузитьДанные</CommandName>
-							<ExtendedTooltip name="ВыгрузитьДанныеРасширеннаяПодсказка" id="8"/>
-						</Button>
-						<Button name="ЗагрузитьДанные" id="11">
-							<Type>UsualButton</Type>
-							<Width>40</Width>
-							<Height>1</Height>
-							<CommandName>Form.Command.ЗагрузитьДанные</CommandName>
-							<ExtendedTooltip name="ЗагрузитьДанныеРасширеннаяПодсказка" id="12"/>
-						</Button>
-						<Button name="ЗарегистрироватьВсё" id="9">
-							<Type>UsualButton</Type>
-							<Width>40</Width>
-							<Height>1</Height>
-							<CommandName>Form.Command.ЗарегистрироватьВсё</CommandName>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Зарегистрировать всё в обмен</v8:content>
-								</v8:item>
-							</Title>
-							<ExtendedTooltip name="ЗарегистрироватьВсёРасширеннаяПодсказка" id="10"/>
-						</Button>
-						<Button name="ПланОбменаМобильныеОткрытьСписок" id="61">
-							<Type>UsualButton</Type>
-							<Representation>PictureAndText</Representation>
-							<Width>40</Width>
-							<Height>1</Height>
-							<CommandName>ExchangePlan.Мобильные.StandardCommand.OpenList</CommandName>
-							<Picture>
-								<xr:Ref>StdPicture.ExchangePlan</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ExtendedTooltip name="ПланОбменаМобильныеОткрытьСписокРасширеннаяПодсказка" id="62"/>
-						</Button>
-						<Button name="ОбщаяКомандаОбмен" id="19">
-							<Type>UsualButton</Type>
-							<Representation>PictureAndText</Representation>
-							<Width>40</Width>
-							<CommandName>CommonCommand.Обмен</CommandName>
-							<Picture>
-								<xr:Ref>StdPicture.Refresh</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ExtendedTooltip name="ОбщаяКомандаОбменРасширеннаяПодсказка" id="20"/>
 						</Button>
 					</ChildItems>
 				</Page>
@@ -439,7 +293,11 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:ExchangePlanRef.Мобильные</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="ДеревоОбъектов" id="7">
@@ -550,27 +408,6 @@
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="ЗарегистрироватьВсё" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Зарегистрировать всё</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Зарегистрировать всё</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>StdPicture.CheckAll</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Action>ЗарегистрироватьВсё</Action>
-			<Representation>TextPicture</Representation>
-			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
 		<Command name="ЗагрузитьДанные" id="6">
 			<Title>
 				<v8:item>
@@ -608,41 +445,25 @@
 			<Action>ЗагрузкаКурсовВалют</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="ВыгрузитьБекапНаПочту" id="8">
+		<Command name="ВыгрузитьРезервнуюКопиюНаПочту" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузить бекап на почту</v8:content>
+					<v8:content>Выгрузить резервную копию на почту</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузить бекап на почту</v8:content>
+					<v8:content>Выгрузить резервную копию на почту</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Бекап</xr:Ref>
+				<xr:Ref>CommonPicture.РезервноеКопирование</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ВыгрузитьБекапНаПочту</Action>
+			<Action>ВыгрузитьРезервнуюКопиюНаПочту</Action>
 			<Representation>TextPicture</Representation>
-			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
-		<Command name="УдалитьРегистрацию" id="9">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить регистрацию</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить регистрацию</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>УдалитьРегистрацию</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="МаксСообщениеРегистрации" id="10">
@@ -661,20 +482,20 @@
 			<Action>МаксСообщениеРегистрации</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="ЗагрузитьБекапПочты2" id="12">
+		<Command name="ЗагрузитьРезервнуюКопиюПочты" id="12">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить бекап почты</v8:content>
+					<v8:content>Загрузить резервную копию</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить бекап почты2</v8:content>
+					<v8:content>Загрузить резервную копию почты</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ЗагрузитьБекапПочты2</Action>
+			<Action>ЗагрузитьРезервнуюКопиюПочты</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОчиститьКурсыВалют" id="13">
@@ -695,7 +516,7 @@
 		</Command>
 	</Commands>
 	<Parameters>
-		<Parameter name="ВыгрузкаБекапаНаПочту">
+		<Parameter name="ВыгрузкаРезервнойКопииНаПочту">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>

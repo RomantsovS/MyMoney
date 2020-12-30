@@ -41,10 +41,13 @@
 				<Event name="OnChange">ОсновнойКошелекПриИзменении</Event>
 			</Events>
 		</InputField>
-		<InputField name="НомерВерсииКонфигурации" id="7">
-			<DataPath>НаборКонстант.ТекущаяВерсияПриложения</DataPath>
-			<ContextMenu name="НомерВерсииКонфигурацииКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="НомерВерсииКонфигурацииРасширеннаяПодсказка" id="9"/>
+		<InputField name="ТекущаяВерсияПриложения" id="7">
+			<DataPath>Константа_ТекущаяВерсияПриложения</DataPath>
+			<ContextMenu name="ТекущаяВерсияПриложенияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТекущаяВерсияПриложенияРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">НомерВерсииКонфигурацииПриИзменении</Event>
+			</Events>
 		</InputField>
 		<Button name="EmailBackup" id="34">
 			<Type>UsualButton</Type>
@@ -277,6 +280,21 @@
 				<Item>FunctionalOption.ИспользоватьЧтениеСМСДляСозданияОпераций</Item>
 			</FunctionalOptions>
 		</Attribute>
+		<Attribute name="Константа_ТекущаяВерсияПриложения" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая версия приложения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ИзменитьПароль" id="2">
@@ -341,7 +359,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Бекап</xr:Ref>
+				<xr:Ref>CommonPicture.РезервноеКопирование</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>EmailBackUp</Action>
