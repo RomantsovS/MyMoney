@@ -29,6 +29,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>&lt;html&gt;
 &lt;body&gt;
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.16.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлена возможность загрузки операций из OFX-файла&lt;br&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Исправлена ошибка автоматического пересчёта суммы приёмника при выборе кошелька приёмника&lt;br&gt;
+
 &lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.15.1&lt;/b&gt;&lt;/p&gt;
 &lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Исправлены некоторые ошибки стандартов разработки&lt;br&gt;
 
@@ -150,7 +154,7 @@
 	<height>1</height>
 	<vgRows>1</vgRows>
 	<format>
-		<width>1025</width>
+		<width>1451</width>
 	</format>
 	<format>
 		<width>72</width>

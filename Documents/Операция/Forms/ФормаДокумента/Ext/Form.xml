@@ -241,7 +241,7 @@
 					<ContextMenu name="КошелекПриемникКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="КошелекПриемникРасширеннаяПодсказка" id="15"/>
 					<Events>
-						<Event name="OnChange">КошелекПриёмникПриИзменении</Event>
+						<Event name="OnChange">КошелекПриемникПриИзменении</Event>
 					</Events>
 				</InputField>
 				<UsualGroup name="Группа1" id="63">

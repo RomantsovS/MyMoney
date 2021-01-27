@@ -25,6 +25,13 @@
 					</ToolTip>
 					<ExtendedTooltip name="СтраницаОсновнаяРасширеннаяПодсказка" id="26"/>
 					<ChildItems>
+						<Button name="ОбработкаЗагрузкаOXFОткрыть" id="79">
+							<Type>UsualButton</Type>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>0:8b90c125-bd09-4d7a-b951-466f38d14b4b</CommandName>
+							<ExtendedTooltip name="ОбработкаЗагрузкаOXFОткрытьРасширеннаяПодсказка" id="80"/>
+						</Button>
 						<Button name="ЗагрузкаКурсовВалют" id="13">
 							<Type>UsualButton</Type>
 							<Representation>PictureAndText</Representation>
