@@ -69,7 +69,7 @@
 				<InputField name="ОстаткиСумма" id="17">
 					<DataPath>Остатки.Сумма</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<Width>6</Width>
+					<Width>8</Width>
 					<ContextMenu name="ОстаткиСуммаКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="ОстаткиСуммаРасширеннаяПодсказка" id="19"/>
 				</InputField>
