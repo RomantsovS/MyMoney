@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -144,6 +144,7 @@
 						<PictureDecoration name="Декорация11" id="122">
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>true</VerticalStretch>
+							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="Декорация11КонтекстноеМеню" id="123"/>
 							<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="124"/>
 						</PictureDecoration>
@@ -239,6 +240,7 @@
 											<Width>1</Width>
 											<Height>2</Height>
 											<HorizontalStretch>true</HorizontalStretch>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Декорация2КонтекстноеМеню" id="40"/>
 											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="41"/>
 										</PictureDecoration>
@@ -264,6 +266,7 @@
 													<v8:content>1</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка1КонтекстноеМеню" id="43"/>
 											<ExtendedTooltip name="Кнопка1РасширеннаяПодсказка" id="44"/>
 											<Events>
@@ -292,6 +295,7 @@
 													<v8:content>2</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка2КонтекстноеМеню" id="46"/>
 											<ExtendedTooltip name="Кнопка2РасширеннаяПодсказка" id="47"/>
 											<Events>
@@ -320,6 +324,7 @@
 													<v8:content>3</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка3КонтекстноеМеню" id="49"/>
 											<ExtendedTooltip name="Кнопка3РасширеннаяПодсказка" id="50"/>
 											<Events>
@@ -330,6 +335,7 @@
 											<Width>1</Width>
 											<Height>2</Height>
 											<HorizontalStretch>true</HorizontalStretch>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Декорация3КонтекстноеМеню" id="52"/>
 											<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="53"/>
 										</PictureDecoration>
@@ -357,6 +363,7 @@
 											<Width>1</Width>
 											<Height>2</Height>
 											<HorizontalStretch>true</HorizontalStretch>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Декорация4КонтекстноеМеню" id="57"/>
 											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="58"/>
 										</PictureDecoration>
@@ -382,6 +389,7 @@
 													<v8:content>4</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка4КонтекстноеМеню" id="60"/>
 											<ExtendedTooltip name="Кнопка4РасширеннаяПодсказка" id="61"/>
 											<Events>
@@ -410,6 +418,7 @@
 													<v8:content>5</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка5КонтекстноеМеню" id="63"/>
 											<ExtendedTooltip name="Кнопка5РасширеннаяПодсказка" id="64"/>
 											<Events>
@@ -438,6 +447,7 @@
 													<v8:content>6</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка6КонтекстноеМеню" id="66"/>
 											<ExtendedTooltip name="Кнопка6РасширеннаяПодсказка" id="67"/>
 											<Events>
@@ -448,6 +458,7 @@
 											<Width>1</Width>
 											<Height>2</Height>
 											<HorizontalStretch>true</HorizontalStretch>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Декорация5КонтекстноеМеню" id="69"/>
 											<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="70"/>
 										</PictureDecoration>
@@ -475,6 +486,7 @@
 											<Width>1</Width>
 											<Height>2</Height>
 											<HorizontalStretch>true</HorizontalStretch>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Декорация6КонтекстноеМеню" id="74"/>
 											<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="75"/>
 										</PictureDecoration>
@@ -500,6 +512,7 @@
 													<v8:content>7</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка7КонтекстноеМеню" id="77"/>
 											<ExtendedTooltip name="Кнопка7РасширеннаяПодсказка" id="78"/>
 											<Events>
@@ -528,6 +541,7 @@
 													<v8:content>8</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка8КонтекстноеМеню" id="80"/>
 											<ExtendedTooltip name="Кнопка8РасширеннаяПодсказка" id="81"/>
 											<Events>
@@ -556,6 +570,7 @@
 													<v8:content>9</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка9КонтекстноеМеню" id="83"/>
 											<ExtendedTooltip name="Кнопка9РасширеннаяПодсказка" id="84"/>
 											<Events>
@@ -566,6 +581,7 @@
 											<Width>1</Width>
 											<Height>2</Height>
 											<HorizontalStretch>true</HorizontalStretch>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Декорация7КонтекстноеМеню" id="86"/>
 											<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="87"/>
 										</PictureDecoration>
@@ -593,6 +609,7 @@
 											<Width>1</Width>
 											<Height>2</Height>
 											<HorizontalStretch>true</HorizontalStretch>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Декорация8КонтекстноеМеню" id="91"/>
 											<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="92"/>
 										</PictureDecoration>
@@ -617,6 +634,7 @@
 													<v8:content>CANCEL</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="КнопкаОтменаКонтекстноеМеню" id="94"/>
 											<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="95"/>
 											<Events>
@@ -645,6 +663,7 @@
 													<v8:content>0</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Кнопка0КонтекстноеМеню" id="97"/>
 											<ExtendedTooltip name="Кнопка0РасширеннаяПодсказка" id="98"/>
 											<Events>
@@ -672,6 +691,7 @@
 													<v8:content>&lt;-</v8:content>
 												</v8:item>
 											</NonselectedPictureText>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="КнопкаУдалитьКонтекстноеМеню" id="100"/>
 											<ExtendedTooltip name="КнопкаУдалитьРасширеннаяПодсказка" id="101"/>
 											<Events>
@@ -682,6 +702,7 @@
 											<Width>1</Width>
 											<Height>2</Height>
 											<HorizontalStretch>true</HorizontalStretch>
+											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="Декорация9КонтекстноеМеню" id="103"/>
 											<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="104"/>
 										</PictureDecoration>
@@ -692,6 +713,7 @@
 						<PictureDecoration name="Декорация1" id="116">
 							<HorizontalStretch>true</HorizontalStretch>
 							<VerticalStretch>true</VerticalStretch>
+							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="Декорация1КонтекстноеМеню" id="117"/>
 							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="118"/>
 						</PictureDecoration>

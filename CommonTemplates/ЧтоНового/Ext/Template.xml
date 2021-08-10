@@ -29,6 +29,12 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>&lt;html&gt;
 &lt;body&gt;
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.18.2&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• При загрузке операций из файла добавлен анализ лишних&lt;br&gt;
+
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.18.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Обновлено до платформы 1С 8.3.18.1520&lt;br&gt;
+
 &lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.17.1&lt;/b&gt;&lt;/p&gt;
 &lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Изменено условие поиска существующей операции при загрузке из СМС или OXF-файла: поиск с точностью до часа&lt;br&gt;
 
