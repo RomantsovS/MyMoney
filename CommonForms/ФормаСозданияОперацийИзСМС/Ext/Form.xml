@@ -69,6 +69,24 @@
 								<Event name="OnChange">НачалоПериодаПриИзменении</Event>
 							</Events>
 						</InputField>
+						<CheckBoxField name="СкрыватьСуществующиеОперации" id="80">
+							<DataPath>СкрыватьСуществующиеОперации</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СкрыватьСуществующиеОперацииКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="СкрыватьСуществующиеОперацииРасширеннаяПодсказка" id="82"/>
+							<Events>
+								<Event name="OnChange">СкрыватьСуществующиеОперацииПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="ОтображатьТолькоЛишниеОперации" id="83">
+							<DataPath>ОтображатьТолькоЛишниеОперации</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтображатьТолькоЛишниеОперацииКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ОтображатьТолькоЛишниеОперацииРасширеннаяПодсказка" id="85"/>
+							<Events>
+								<Event name="OnChange">ОтображатьТолькоЛишниеОперацииПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
 						<Button name="Обновить" id="66">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.Обновить</CommandName>
@@ -156,7 +174,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Есть</v8:content>
+													<v8:content>Есть операция</v8:content>
 												</v8:item>
 											</Title>
 											<EditMode>EnterOnInput</EditMode>
@@ -166,6 +184,13 @@
 										</CheckBoxField>
 										<CheckBoxField name="СписокЛишняяОперация" id="75">
 											<DataPath>Список.ЛишняяОперация</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Лишняя операция</v8:content>
+												</v8:item>
+											</Title>
 											<EditMode>EnterOnInput</EditMode>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="СписокЛишняяОперацияКонтекстноеМеню" id="76"/>
@@ -396,6 +421,28 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СкрыватьСуществующиеОперации" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрывать существующие операции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображатьТолькоЛишниеОперации" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать только лишние операции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
