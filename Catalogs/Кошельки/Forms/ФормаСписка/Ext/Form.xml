@@ -11,6 +11,11 @@
 				<CommandName>Form.Command.ПоказатьОперации</CommandName>
 				<ExtendedTooltip name="ФормаПоказатьОперацииРасширеннаяПодсказка" id="38"/>
 			</Button>
+			<Button name="ФормаСкрытьНеиспользуемые" id="45">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СкрытьНеиспользуемые</CommandName>
+				<ExtendedTooltip name="ФормаСкрытьНеиспользуемыеРасширеннаяПодсказка" id="46"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -67,8 +72,13 @@
 					<Button name="ФормаОбщаяКомандаУдалитьЭлементСправочника" id="39">
 						<Type>CommandBarButton</Type>
 						<CommandName>CommonCommand.УдалениеЭлементаСПроверкой</CommandName>
-						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 						<ExtendedTooltip name="ФормаОбщаяКомандаУдалитьЭлементСправочникаРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюСкрытьНеиспользуемые1" id="43">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СкрытьНеиспользуемые</CommandName>
+						<ExtendedTooltip name="СписокКонтекстноеМенюСкрытьНеиспользуемые1РасширеннаяПодсказка" id="44"/>
 					</Button>
 				</ChildItems>
 			</ContextMenu>
@@ -102,7 +112,7 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="Код" id="28">
-					<DataPath>Список.Code</DataPath>
+					<DataPath>Список.Код</DataPath>
 					<Width>16</Width>
 					<ContextMenu name="КодКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="30"/>
@@ -148,20 +158,34 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>Список.Ref</Field>
+				<Field>~Список.ОперацииДолги</Field>
+				<Field>~Список.ОперацииДоход</Field>
+				<Field>~Список.ОперацииПеревод</Field>
+				<Field>~Список.ОперацииРасход</Field>
+				<Field>Список.НеИспользуется</Field>
+				<Field>Список.Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
+				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	СправочникКошельки.Ссылка,
-	СправочникКошельки.Код,
-	СправочникКошельки.Валюта,
-	ЕСТЬNULL(КошелькиОстатки.СуммаОстаток, 0) КАК СуммаОстаток
+	СправочникКошельки.Ссылка КАК Ссылка,
+	СправочникКошельки.Код КАК Код,
+	СправочникКошельки.Валюта КАК Валюта,
+	ЕСТЬNULL(КошелькиОстатки.СуммаОстаток, 0) КАК СуммаОстаток,
+	НЕ СправочникКошельки.ОперацииРасход
+		И НЕ СправочникКошельки.ОперацииДоход
+		И НЕ СправочникКошельки.ОперацииПеревод
+		И НЕ СправочникКошельки.ОперацииДолги КАК НеИспользуется
 ИЗ
 	Справочник.Кошельки КАК СправочникКошельки
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.Кошельки.Остатки КАК КошелькиОстатки
-		ПО СправочникКошельки.Ссылка = КошелькиОстатки.Кошелек</QueryText>
+		ПО СправочникКошельки.Ссылка = КошелькиОстатки.Кошелек
+ГДЕ
+	НЕ &amp;СкрытьНеиспользуемые ИЛИ СправочникКошельки.ОперацииРасход
+			ИЛИ СправочникКошельки.ОперацииДоход
+			ИЛИ СправочникКошельки.ОперацииПеревод
+			ИЛИ СправочникКошельки.ОперацииДолги</QueryText>
 				<MainTable>Catalog.Кошельки</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -209,6 +233,21 @@
 			</ToolTip>
 			<Action>ПоказатьОперации</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СкрытьНеиспользуемые" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрыть неиспользуемые</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скрыть неиспользуемые</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкрытьНеиспользуемые</Action>
 		</Command>
 	</Commands>
 </Form>
