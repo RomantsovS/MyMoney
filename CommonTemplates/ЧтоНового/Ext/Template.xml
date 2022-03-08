@@ -30,6 +30,9 @@
 							<v8:content>&lt;html&gt;
 &lt;body&gt;
 
+&lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.20.1&lt;/b&gt;&lt;/p&gt;
+&lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Добавлен отчёт по переводам на базе обычного отчета СКД&lt;br&gt;
+
 &lt;p style="margin-bottom: 5px"&gt;&lt;b&gt;Версия 1.19.3&lt;/b&gt;&lt;/p&gt;
 &lt;p style="margin-top: 0; margin-bottom: 0"&gt;• Исправлен поиск лишних операций при загрузке из OFX-файла&lt;br&gt;
 
