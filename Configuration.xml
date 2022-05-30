@@ -51,7 +51,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
 			</DefaultRoles>
 			<Vendor/>
-			<Version>1.20.1</Version>
+			<Version>1.21.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
